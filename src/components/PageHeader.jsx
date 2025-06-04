@@ -11,7 +11,7 @@ const PageHeader = ({ title, breadcrumb, image }) => {
             {title}
           </h1>
         </div>
-        <div className='w-1/2 border-t-2 border-[#98ff96]/50 lg:p-8 p-4 bg-[#00461f]'>
+        <div className='w-1/2 border-t-2 border-[#98ff96]/50 lg:p-8 p-2 bg-[#00461f]'>
           <img className='h-full w-full object-cover' src={image} alt={title} />
         </div>
       </div>

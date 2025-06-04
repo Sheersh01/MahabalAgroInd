@@ -70,7 +70,7 @@ const ContactForm = () => {
       <button
         type="submit"
         disabled={state.submitting}
-       className='bg-[#42ff00] uppercase text-[#00461f] lg:px-8 md:px-4 lg:py-4 md:py-2 rounded-full font-semibold mt-10 flex items-center gap-4 w-fit lg:text-[1vw] md:text-[1.5vw] px-4 py-2'>
+       className='bg-[#42ff00] uppercase text-[#00461f] lg:px-8 md:px-4 lg:py-4 md:py-2 rounded-full font-semibold  flex items-center gap-4 w-fit lg:text-[1vw] md:text-[1.5vw] text-[4vw] px-4 py-2'>
         {state.submitting ? "Sending..." : "Send Message"}
       </button>
     </form>

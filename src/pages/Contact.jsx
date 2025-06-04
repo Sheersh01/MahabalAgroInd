@@ -14,7 +14,7 @@ const Contact = () => {
         image={contactUsImg}
       />
 
-      <h1 className="text-center lg:text-[5vw] md:text-[7.5vw] text-[10vw] text-[#00461f] lg:mt-16 mt-10 md:py-10 ">
+      <h1 className="text-center lg:text-[5vw] md:text-[7.5vw] text-[10vw] text-[#00461f] lg:mt-16 mt-10 md:py-10 underline font-semibold">
         Contact Us
       </h1>
 
@@ -22,10 +22,17 @@ const Contact = () => {
         {/* Left Contact Info */}
         <div className="lg:w-[40%] md:w-1/2 w-full md:p-8 py-8 flex flex-col items-center justify-center">
           <div className="bg-[#00461f] text-white py-4 px-8 rounded-2xl">
-            <h1 className="lg:text-[1.2vw] md:text-[1.8vw] text-[4vw]">Head Office</h1>
-            <h1 className="py-6 lg:text-[2.5vw] md:text-[3.2vw] text-[4vw]"><FaLocationDot /></h1>
-            <h1 className="lg:text-[1.8vw] md:text-[2.4vw] text-[5vw] pb-8 leading-tight">
-              Shri Gorakshan Anusandhan,<br /> Umred Rd, opposite Smt Radhikatai Pandav College of Engg,<br /> Nagpur, Maharashtra 441204
+            <h1 className="lg:text-[1.2vw] md:text-[1.8vw] text-[4vw]">
+              Head Office
+            </h1>
+            <h1 className="py-6 lg:text-[2.5vw] md:text-[3.2vw] text-[8vw]">
+              <FaLocationDot />
+            </h1>
+            <h1 className="lg:text-[1.8vw] md:text-[2.4vw] text-[5vw] pb-8 lg:leading-8 leading-6">
+              Shri Gorakshan Anusandhan,
+              <br /> Umred Rd, opposite Smt Radhikatai Pandav College of Engg,
+              <br /> Nagpur, Maharashtra,
+              <br /> 441204
             </h1>
             <h1 className="lg:text-[1.2vw] md:text-[1.8vw] text-[4vw] pb-4">
               E-Mail : mahabalagroind@gmail.com
