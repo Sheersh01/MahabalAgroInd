@@ -28,8 +28,8 @@ const Statistics = () => {
   }, []);
 
   return (
-    <div className="min-h-screen w-full md:px-12 px-4 py-20">
-      <h1 className="lg:text-[3vw] md:text-[3.2vw] mb-4">MahaBal in Numbers</h1>
+    <div className="min-h-screen w-full md:px-12 px-4 py-20 text-[#00461f]">
+      <h1 className="lg:text-[3vw] md:text-[3.2vw] text-[8vw] mb-4 font-semibold ">Mahabal in Numbers</h1>
       <p className="lg:text-[2.5vw] md:text-[3vw] lg:w-[80%] md:w-[905] md:mb-20 mb-10">
         Our continuously rising success each year,
         is making us one of Nagpur's organic fertilizer producers.
@@ -38,7 +38,7 @@ const Statistics = () => {
         <div className="lg:w-[60%] md:w-1/2 w-full flex lg:gap-40 gap-30 justify-evenly lg:justify-start">
           <div>
             <div className="leading-none tracking-tight mb-10">
-              <h1 className="md:text-[6vw] text-[10vw]">920+</h1>
+              <h1 className="md:text-[6vw] text-[10vw]">20+</h1>
               <h1 className="uppercase md:text-[1.5vw] text-[3vw]">Employee</h1>
             </div>
             <div className="leading-none tracking-tight mb-10">

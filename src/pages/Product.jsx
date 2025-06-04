@@ -21,7 +21,7 @@ const Product = () => {
         image={productImg}
       />
       <div className="w-full md:px-12 md:mt-20 px-8 mt-10">
-        <div className="border-[#00461f] border-y-1 md:mb-20 mb-10 flex gap-12 justify-center flex-wrap text-center">
+        <div className="border-[#00461f] border-y-1 md:mb-20 mb-10 flex md:gap-12 gap-2 justify-center flex-wrap text-center">
           <button 
             onClick={() => scrollToSection(aboutRef)}
             className="uppercase md:text-[1.5vw] text-[2.5vw] hover:text-green-700 transition-colors cursor-pointer"

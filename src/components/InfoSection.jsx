@@ -12,7 +12,7 @@ const InfoSection = () => {
         </div>
         </div>
         <div className="lg:w-[60%] md:w-1/2 w-full py-20">
-          <h1 className="lg:text-[1.5vw] md:text-[2vw] text-[6vw] pb-8">Our Product</h1>
+          <h1 className="lg:text-[3vw] md:text-[3.2vw] text-[8vw] mb-4 font-semibold">Our Product</h1>
           <h1 className="font-semibold lg:text-[4vw] md:text-[4vw] text-[7vw] leading-none pb-8">
             Engineering Compost: A Smarter Way to Fertilize Naturally
           </h1>

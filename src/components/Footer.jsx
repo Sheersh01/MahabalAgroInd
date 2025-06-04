@@ -5,15 +5,15 @@ import { FaFacebookF } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
 import { PiYoutubeLogoFill } from "react-icons/pi";
 import { FaLinkedinIn } from "react-icons/fa";
-import Logo from "../assets/logo2.png"
+import Logo from "../assets/logo2.png";
 const Footer = () => {
   return (
     <div className=" bg-[#00461f] w-full md:px-12 px-6 text-white ">
       <div className="flex md:flex-row flex-col-reverse py-16">
         <div className="left-half md:w-[50%] w-full mt-10">
-        <div className="h-40 w-fit ">
-                 <img className="w-full h-full object-contain" src={Logo} alt="" />
-               </div>
+          <div className="h-40 w-fit ">
+            <img className="w-full h-full object-contain" src={Logo} alt="" />
+          </div>
           <div className="flex gap-6 md:pb-10 pb-6">
             <h1 className="lg:text-[2vw] md:text-[4vw] text-[8vw] hover:text-[#42ff00]">
               <FaFacebookF />
@@ -42,8 +42,8 @@ const Footer = () => {
             </button>
           </div>
         </div>
-        <div className="flex md:justify-evenly ryt-half md:gap-12 gap-20 md:w-[50%] w-full">
-          <div className="text-white lg:text-[1.2vw] md:text-[2vw]">
+        <div className="flex md:justify-evenly ryt-half md:gap-12 md:w-[50%] w-full">
+          <div className="text-white lg:text-[1.2vw] text-[4.5vw] w-[40%]">
             <h1 className="pb-12">MENU</h1>
             <Link to="/">
               {" "}
@@ -62,7 +62,7 @@ const Footer = () => {
               <h1 className="py-1 hover:text-[#42ff00]">Contact Us</h1>
             </Link>
           </div>
-          <div className="lg:text-[1.2vw] md:text-[2vw]">
+          <div className="lg:text-[1.2vw] text-[4.5vw] w-[60%]">
             <h1 className="text-white pb-12">CONTACT US</h1>
             <h1 className="text-white py-1">mahabalagroind@gmail.com</h1>
             <h1 className="text-white py-1">+91 997573228</h1>
