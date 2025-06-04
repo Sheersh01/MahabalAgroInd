@@ -1,14 +1,32 @@
-import React from 'react'
-import ReadMoreBtn from './ReadMoreBtn'
-const ContentBox = () => {
-  return (
-      <div className='bg-[#00461f] lg:w-1/2 md:w-[50%]  text-white lg:pt-12 lg:pb-30 md:py-8 lg:px-8 md:px-6 px-4 py-8 rounded-2xl'>
-                <h1 className=''>LOGO</h1>
-                <h1 className='font-bold  lg:text-[3vw] text-[5vw] lg:my-12 my-6'>Agricultural Products</h1>
-                <p className='lg:text-[1.8vw] md:text-[2.5vw] text-[4vw] leading-none'>We aim to increase the productivity and quality of Turkish agriculture with our rich fertilizer range. We provide reliable and innovative products for bountiful harvests by offering solutions suitable for all types of plants and soil, from classic to special.</p>
-                 <ReadMoreBtn  title="Read More"/>
-            </div>
-  )
-}
+import React from 'react';
+import {Link} from "react-router-dom"
+import ReadMoreBtn from './ReadMoreBtn';
+import { FaQuestion } from 'react-icons/fa';
 
-export default ContentBox
+const ContentBox = ({ heading, description, buttonTitle = "Read More", img ,link = "#"}) => {
+  return (
+    <div className="group lg:w-1/2 md:w-[50%] lg:pt-10 lg:pb-10 md:py-8 lg:px-8 md:px-6 px-4 py-8 rounded-2xl text-white relative overflow-hidden">
+
+      {/* BACKGROUND IMAGE (scaled on hover) */}
+      <div
+        className="absolute inset-0 bg-center bg-cover transition-transform duration-500 group-hover:scale-[1.25] z-0"
+        style={{ backgroundImage: `url(${img})` }}
+      />
+
+      {/* DARK OVERLAY */}
+      <div className="absolute inset-0 bg-black/60 z-10"></div>
+
+      {/* CONTENT */}
+      <div className="relative z-20 p-4">
+        <h1 className="lg:text-[3vw] md:text-[4vw] text-[5vw]"><FaQuestion /></h1>
+        <h1 className="font-bold lg:text-[3vw] text-[5vw] lg:my-12 my-6 capitalize">{heading}</h1>
+        <p className="lg:text-[1.8vw] md:text-[2.5vw] text-[4vw] leading-none">
+          {description}
+        </p>
+       <Link to={link}> <ReadMoreBtn  title={buttonTitle} /></Link>
+      </div>
+    </div>
+  );
+};
+
+export default ContentBox;
