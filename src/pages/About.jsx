@@ -1,6 +1,9 @@
 import React, { useRef } from "react";
 import PageHeader from "../components/PageHeader";
 import aboutUsImg from "../assets/about.avif";
+import about2Img from "../assets/about2.avif";
+import about3Img from "../assets/about3.avif";
+import about4Img from "../assets/about4.avif";
 
 const About = () => {
   const aboutUsRef = useRef(null);
@@ -18,23 +21,24 @@ const About = () => {
         breadcrumb="Home / About Us"
         image={aboutUsImg}
       />
+      
       <div className="w-full md:px-12 md:mt-20 px-8 mt-10">
         <div className="border-[#2E1403] border-y-1 md:mb-20 mb-10 flex gap-12 justify-center text-center">
           <button 
             onClick={() => scrollToSection(aboutUsRef)}
-            className="uppercase md:text-[1.5vw] text-[2.5vw] hover:text-green-700 transition-colors cursor-pointer"
+            className="uppercase md:text-[1.5vw] text-[2.5vw] hover:text-[#D98324] transition-colors cursor-pointer"
           >
             About Us
           </button>
           <button 
             onClick={() => scrollToSection(valuesRef)}
-            className="uppercase md:text-[1.5vw] text-[2.5vw] hover:text-green-700 transition-colors cursor-pointer"
+            className="uppercase md:text-[1.5vw] text-[2.5vw] hover:text-[#D98324] transition-colors cursor-pointer"
           >
             Our Values
           </button>
           <button 
             onClick={() => scrollToSection(historyRef)}
-            className="uppercase md:text-[1.5vw] text-[2.5vw] hover:text-green-700 transition-colors cursor-pointer"
+            className="uppercase md:text-[1.5vw] text-[2.5vw] hover:text-[#D98324] transition-colors cursor-pointer"
           >
             Our History
           </button>
@@ -42,9 +46,9 @@ const About = () => {
 
         <section ref={aboutUsRef} className="lg:mb-40 md:mb-20 mb-10 w-full flex md:flex-row flex-col">
           <div className="md:w-1/2 w-full">
-            <div className="w-full bg-pink-100 h-[30vw] flex items-center justify-center">
+            <div className="w-full bg-pink-100 lg:h-[30vw] md:h-[40vw] h-[60vw] mb-10 flex items-center justify-center">
               <img
-                src="your-image-path-about1.jpg"
+                src={about2Img}
                 alt="About Us Illustration"
                 className="object-cover w-full h-full"
               />
@@ -65,9 +69,9 @@ const About = () => {
 
         <section ref={valuesRef} className="lg:mb-40 md:mb-20 mb-10 w-full flex flex-col md:flex-row-reverse">
           <div className="md:w-1/2 w-full">
-            <div className="w-full bg-pink-100 h-[30vw] flex items-center justify-center">
+            <div className="w-full bg-pink-100 lg:h-[30vw] md:h-[40vw] h-[60vw] mb-10 flex items-center justify-center">
               <img
-                src="your-image-path-about2.jpg"
+                src={about3Img}
                 alt="Our Values Illustration"
                 className="object-cover w-full h-full"
               />
@@ -88,9 +92,9 @@ const About = () => {
 
         <section ref={historyRef} className="lg:mb-40 md:mb-20 mb-10 w-full flex md:flex-row flex-col">
           <div className="md:w-1/2 w-full">
-            <div className="w-full bg-pink-100 h-[30vw] flex items-center justify-center">
+            <div className="w-full bg-pink-100 lg:h-[30vw] md:h-[40vw] h-[60vw] mb-10 flex items-center justify-center">
               <img
-                src="your-image-path-about3.jpg"
+                src={about4Img}
                 alt="Our History Illustration"
                 className="object-cover w-full h-full"
               />

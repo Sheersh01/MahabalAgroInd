@@ -6,9 +6,8 @@ border-bottom: 2px solid white;
 *::-webkit-scrollbar{
     display: none;
 }
-*::selection{
-    color: #2E1403;
-    background-color: #F6F0E8;
+*{
+    /* user-select: none; */
 }
 html, body {
 background-color: #F6F0E8;

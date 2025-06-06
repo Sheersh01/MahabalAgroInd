@@ -16,16 +16,16 @@ const Footer = () => {
             <img className="w-full h-full object-contain" src={Logo} alt="" />
           </div>
           <div className="flex gap-6 md:pb-10 pb-6">
-            <h1 className="lg:text-[2vw] md:text-[4vw] text-[8vw] hover:text-[#D98324]">
+            <h1 className="lg:text-[2vw] md:text-[4vw] text-[8vw] hover:text-[#D98324] transition-all">
               <FaFacebookF />
             </h1>
-            <h1 className="lg:text-[2vw] md:text-[4vw] text-[8vw] hover:text-[#D98324]">
+            <h1 className="lg:text-[2vw] md:text-[4vw] text-[8vw] hover:text-[#D98324] transition-all">
               <BsInstagram />
             </h1>
-            <h1 className="lg:text-[2vw] md:text-[4vw] text-[8vw] hover:text-[#D98324]">
+            <h1 className="lg:text-[2vw] md:text-[4vw] text-[8vw] hover:text-[#D98324] transition-all">
               <PiYoutubeLogoFill />
             </h1>
-            <h1 className="lg:text-[2vw] md:text-[4vw] text-[8vw] hover:text-[#D98324]">
+            <h1 className="lg:text-[2vw] md:text-[4vw] text-[8vw] hover:text-[#D98324] transition-all">
               <FaLinkedinIn />
             </h1>
           </div>
@@ -44,31 +44,31 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex md:justify-evenly ryt-half md:gap-12 md:w-[50%] w-full">
-          <div className="text-[#F6F0E8] lg:text-[1.2vw] text-[4.5vw] w-[40%]">
+          <div className="text-[#F6F0E8] lg:text-[1.2vw] md:text-[2vw] text-[4.5vw] w-[40%]">
             <h1 className="pb-12">MENU</h1>
             <Link to="/">
               {" "}
-              <h1 className="py-1 hover:text-[#D98324]">Home</h1>
+              <h1 className="py-1 hover:text-[#D98324] transition-all">Home</h1>
             </Link>
             <Link to="/product">
               {" "}
-              <h1 className="py-1 hover:text-[#D98324]">Product</h1>
+              <h1 className="py-1 hover:text-[#D98324] transition-all">Product</h1>
             </Link>
             <Link to="/about">
               {" "}
-              <h1 className="py-1 hover:text-[#D98324]">About Us</h1>
+              <h1 className="py-1 hover:text-[#D98324] transition-all">About Us</h1>
             </Link>
             <Link to="/contact">
               {" "}
-              <h1 className="py-1 hover:text-[#D98324]">Contact Us</h1>
+              <h1 className="py-1 hover:text-[#D98324] transition-all">Contact Us</h1>
             </Link>
           </div>
-          <div className="lg:text-[1.2vw] text-[4.5vw] w-[60%]">
+          <div className="lg:text-[1.2vw] md:text-[2vw] text-[4.5vw] w-[60%]">
             <h1 className="text-[#F6F0E8] pb-12">CONTACT US</h1>
             <h1 className="text-[#F6F0E8] py-1">mahabalagroind@gmail.com</h1>
             <h1 className="text-[#F6F0E8] py-1">+91 997573228</h1>
             <Link to="https://whatsapp.com/channel/0029Va5bDEgAzNbzOjnzau3h">
-              <h1 className="bg-[#F6F0E8] text-black px-4 py-2 my-4 rounded-full w-fit hover:bg-[#D98324] flex items-center gap-2">
+              <h1 className="bg-[#F6F0E8] text-black px-4 py-2 my-4 rounded-full w-fit hover:bg-[#D98324] transition-all flex items-center gap-2">
                 {" "}
                Whatsapp 
               <FaWhatsapp/>

@@ -1,6 +1,10 @@
 import React, { useRef } from "react";
 import PageHeader from "../components/PageHeader";
-import productImg from "../assets/product2.avif";
+import productImg from "../assets/awareness.avif";
+import awareness1Img from "../assets/awareness1.avif";
+import awareness2Img from "../assets/awareness2.avif";
+import awareness3Img from "../assets/awareness3.avif";
+import awareness4Img from "../assets/awareness4.avif";
 
 const Awareness = () => {
   const aboutRef = useRef(null);
@@ -13,7 +17,7 @@ const Awareness = () => {
   };
 
   return (
-    <div className="min-h-screen w-full bg-white text-[#2E1403]">
+    <div className="min-h-screen w-full bg-[#F6F0E8] text-[#2E1403]">
       <PageHeader
         title="Awareness"
         breadcrumb="Home / awareness"
@@ -23,25 +27,25 @@ const Awareness = () => {
         <div className="border-[#2E1403] border-y-1 md:mb-20 mb-10 flex md:gap-12 gap-2 justify-center flex-wrap text-center">
           <button 
             onClick={() => scrollToSection(aboutRef)}
-            className="uppercase md:text-[1.5vw] text-[2.5vw] hover:text-green-700 transition-colors cursor-pointer"
+            className="uppercase md:text-[1.5vw] text-[2.5vw] hover:text-[#D98324] transition-colors cursor-pointer"
           >
             About Our Compost
           </button>
           <button 
             onClick={() => scrollToSection(benefitsRef)}
-            className="uppercase md:text-[1.5vw] text-[2.5vw] hover:text-green-700 transition-colors cursor-pointer"
+            className="uppercase md:text-[1.5vw] text-[2.5vw] hover:text-[#D98324] transition-colors cursor-pointer"
           >
             Benefits
           </button>
           <button 
             onClick={() => scrollToSection(usageRef)}
-            className="uppercase md:text-[1.5vw] text-[2.5vw] hover:text-green-700 transition-colors cursor-pointer"
+            className="uppercase md:text-[1.5vw] text-[2.5vw] hover:text-[#D98324] transition-colors cursor-pointer"
           >
             Usage Guide
           </button>
           <button 
             onClick={() => scrollToSection(sustainableRef)}
-            className="uppercase md:text-[1.5vw] text-[2.5vw] hover:text-green-700 transition-colors cursor-pointer"
+            className="uppercase md:text-[1.5vw] text-[2.5vw] hover:text-[#D98324] transition-colors cursor-pointer"
           >
             Sustainable Farming
           </button>
@@ -51,7 +55,7 @@ const Awareness = () => {
           <div className="md:w-1/2 w-full">
             <div className="w-full bg-pink-100 lg:h-[30vw] md:h-[40vw] h-[60vw] mb-10 flex items-center justify-center">
               <img
-                src="your-image-path-product1.jpg"
+                src={awareness1Img}
                 alt="EcoHarvest Engineering Compost Product"
                 className="object-cover w-full h-full"
               />
@@ -87,7 +91,7 @@ const Awareness = () => {
           <div className="md:w-1/2 w-full">
             <div className="w-full bg-pink-100 lg:h-[30vw] md:h-[40vw] h-[60vw] mb-10 flex items-center justify-center">
               <img
-                src="your-image-path-product2.jpg"
+                src={awareness2Img}
                 alt="Why Choose Compost Over Chemicals"
                 className="object-cover w-full h-full"
               />
@@ -121,7 +125,7 @@ const Awareness = () => {
           <div className="md:w-1/2 w-full">
             <div className="w-full bg-pink-100 lg:h-[30vw] md:h-[40vw] h-[60vw] mb-10 flex items-center justify-center">
               <img
-                src="your-image-path-product3.jpg"
+                src={awareness3Img}
                 alt="Using EcoHarvest Compost Guide"
                 className="object-cover w-full h-full"
               />
@@ -152,7 +156,7 @@ const Awareness = () => {
           <div className="md:w-1/2 w-full">
             <div className="w-full bg-pink-100 lg:h-[30vw] md:h-[40vw] h-[60vw] mb-10 flex items-center justify-center">
               <img
-                src="your-image-path-product4.jpg"
+                src={awareness4Img}
                 alt="Sustainable Farming with Compost"
                 className="object-cover w-full h-full"
               />

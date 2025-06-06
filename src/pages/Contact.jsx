@@ -28,7 +28,7 @@ const Contact = () => {
             <h1 className="py-6 lg:text-[2.5vw] md:text-[3.2vw] text-[8vw]">
               <FaLocationDot />
             </h1>
-            <h1 className="lg:text-[1.8vw] md:text-[2.4vw] text-[5vw] pb-8 lg:leading-8 leading-6">
+            <h1 className="lg:text-[1.5vw] md:text-[2.4vw] text-[5vw] pb-8 lg:leading-8 leading-6">
               Shri Gorakshan Anusandhan,
               <br /> Umred Rd, opposite Smt Radhikatai Pandav College of Engg,
               <br /> Nagpur, Maharashtra,

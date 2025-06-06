@@ -67,9 +67,9 @@ const ProductCard = ({ product }) => (
         breadcrumb="Home / product"
         image={productImg}
       />
-       <section className=" py-12 px-4 md:px-16">
-      <h1 className="text-4xl font-bold text-center text-[#2E1403] mb-10">
-        Our Compost Products
+       <section className="px-4 md:px-16">
+    <h1 className="text-center lg:text-[5vw] md:text-[7.5vw] text-[10vw] text-[#2E1403] my-10 md:py-10 underline font-semibold">
+        Compost Products
       </h1>
       <div className="grid gap-8 md:grid-cols-2">
         {products.map((product) => (
