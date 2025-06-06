@@ -3,6 +3,7 @@ import { NavLink, Link } from "react-router-dom";
 import { gsap } from "gsap";
 import { FaEarthAsia } from "react-icons/fa6";
 import { FaWhatsapp } from "react-icons/fa";
+import { FaArrowRightLong } from "react-icons/fa6";
 import Logo from "../assets/logo2.png";
 const Navbar = () => {
   const menuRef = useRef(null);
@@ -192,54 +193,77 @@ const Navbar = () => {
       {/* Overlay Menu */}
       <div
         ref={menuRef}
-        className="fixed top-0 left-0 w-full h-screen bg-[#2E1403] text-[#F6F0E8] flex flex-col items-center justify-center gap-8 text-4xl z-[2]"
+        className="fixed top-0 left-0 w-full min-h-screen bg-[#2E1403] text-[#F6F0E8] z-[2] "
         style={{
           clipPath: "circle(0% at 50% 0%)",
           WebkitClipPath: "circle(0% at 50% 0%)",
         }}
       >
-        <button
-          onClick={handleMenuClick}
-          className="absolute top-10 right-10 text-[#F6F0E8] text-lg border border-[#F6F0E8] px-4 py-2 rounded-full"
-        >
-          CLOSE
-        </button>
+        <div className="w-full flex lg:justify-end jusitfy-between items-center pr-4 mb-10 lg:px-8 lg:pt-6">
+          <div className="w-full">
+            <img
+              className="lg:hidden block md:w-30 md:h-30 w-20 h-20"
+              src={Logo}
+              alt=""
+            />
+          </div>
+          <button
+            onClick={handleMenuClick}
+            className=" text-[#F6F0E8] lg:text-lg text-sm border border-[#F6F0E8] lg:px-5 px-4 py-2 rounded-full hover:bg-[#F6F0E8] hover:text-[#2E1403] hover:scale-[1.2] transition-all"
+          >
+            CLOSE
+          </button>
+        </div>
 
-        <NavLink
-          className="lg:text-6xl md:text-[5vw]"
-          to="/"
-          onClick={handleMenuClick}
-        >
-          Home
-        </NavLink>
-        <NavLink
-          className="lg:text-6xl md:text-[5vw]"
-          to="/about"
-          onClick={handleMenuClick}
-        >
-          About
-        </NavLink>
-        <NavLink
-          className="lg:text-6xl md:text-[5vw]"
-          to="/contact"
-          onClick={handleMenuClick}
-        >
-          Contact
-        </NavLink>
-        <NavLink
-          className="lg:text-6xl md:text-[5vw]"
-          to="/awareness"
-          onClick={handleMenuClick}
-        >
-          Awareness
-        </NavLink>
-        <NavLink
-          className="lg:text-6xl md:text-[5vw]"
-          to="/product"
-          onClick={handleMenuClick}
-        >
-          Product
-        </NavLink>
+        <div className="flex lg:flex-row flex-col lg:py-24 justify-evenly lg:mt-20 md:mt-10 px-4 font-thin">
+          <div className="flex flex-col  md:gap-8 gap-6  md:w-[40%] w-full mb-10">
+            <NavLink
+              className="w-fit lg:text-4xl md:text-[4.8vw] text-[6vw] hover:text-[#D98324]"
+              to="/"
+              onClick={handleMenuClick}
+            >
+              Home
+            </NavLink>
+            <NavLink
+              className="w-fit lg:text-4xl md:text-[4.8vw] text-[6vw] hover:text-[#D98324]"
+              to="/about"
+              onClick={handleMenuClick}
+            >
+              About
+            </NavLink>
+            <NavLink
+              className="w-fit lg:text-4xl md:text-[4.8vw] text-[6vw] hover:text-[#D98324]"
+              to="/contact"
+              onClick={handleMenuClick}
+            >
+              Contact
+            </NavLink>
+            <NavLink
+              className="w-fit lg:text-4xl md:text-[4.8vw] text-[6vw] hover:text-[#D98324]"
+              to="/awareness"
+              onClick={handleMenuClick}
+            >
+              Awareness
+            </NavLink>
+            <NavLink
+              className="w-fit lg:text-4xl md:text-[4.8vw] text-[6vw] hover:text-[#D98324]"
+              to="/product"
+              onClick={handleMenuClick}
+            >
+              Product
+            </NavLink>
+          </div>
+          <div className=" lg:w-[50%] w-full mb-20 lg:-translate-y-10">
+            <img className="lg:block hidden w-50 h-50" src={Logo} alt="" />
+            <p className="lg:text-[2vw] md:text-[3vw] text-[5vw] lg:leading-none md:leading-8 leading-6 mb-4 font-thin">
+              Deal with a company that lives and breathes this sector, and that
+              can bring greater depth and scale to your marketing efforts.
+            </p>
+            <button className="flex items-center gap-2 hover:gap-4 transition-all lg:text-[1.2vw] md:text-[3.5vw] text-[5vw] text-[#D98324] font-semibold">
+              Let's talk <FaArrowRightLong />
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -5,6 +5,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
 import { PiYoutubeLogoFill } from "react-icons/pi";
 import { FaLinkedinIn } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 import Logo from "../assets/logo2.png";
 const Footer = () => {
   return (
@@ -67,9 +68,10 @@ const Footer = () => {
             <h1 className="text-[#F6F0E8] py-1">mahabalagroind@gmail.com</h1>
             <h1 className="text-[#F6F0E8] py-1">+91 997573228</h1>
             <Link to="https://whatsapp.com/channel/0029Va5bDEgAzNbzOjnzau3h">
-              <h1 className="bg-[#F6F0E8] text-black px-4 py-2 my-4 rounded-full w-fit hover:bg-[#D98324]">
+              <h1 className="bg-[#F6F0E8] text-black px-4 py-2 my-4 rounded-full w-fit hover:bg-[#D98324] flex items-center gap-2">
                 {" "}
-                CHANNEL LINK
+               Whatsapp 
+              <FaWhatsapp/>
               </h1>
             </Link>
           </div>
