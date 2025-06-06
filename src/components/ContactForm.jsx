@@ -5,11 +5,11 @@ const ContactForm = () => {
   const [state, handleSubmit] = useForm("mrbkgrpb");
 
   const inputStyles =
-    "border border-[#00461f] focus:outline-none focus:ring-2 focus:ring-[#00461f] px-4 py-2 rounded-xl placeholder:text-gray-500";
+    "border border-[#2E1403] focus:outline-none focus:ring-2 focus:ring-[#2E1403] px-4 py-2 rounded-xl placeholder:text-gray-500";
 
   if (state.succeeded) {
     return (
-      <div className="text-green-700 font-semibold text-lg text-center py-6">
+      <div className="text-[#D98324] font-semibold text-lg text-center py-6">
         ✅ Thanks for contacting us! We'll get back to you shortly.
       </div>
     );
@@ -70,7 +70,7 @@ const ContactForm = () => {
       <button
         type="submit"
         disabled={state.submitting}
-       className='bg-[#42ff00] uppercase text-[#00461f] lg:px-8 md:px-4 lg:py-4 md:py-2 rounded-full font-semibold  flex items-center gap-4 w-fit lg:text-[1vw] md:text-[1.5vw] text-[4vw] px-4 py-2'>
+       className='bg-[#D98324] uppercase text-[#F6F0E8] lg:px-8 md:px-4 lg:py-4 md:py-2 rounded-full font-semibold  flex items-center gap-4 w-fit lg:text-[1vw] md:text-[1.5vw] text-[4vw] px-4 py-2 cursor-pointer'>
         {state.submitting ? "Sending..." : "Send Message"}
       </button>
     </form>

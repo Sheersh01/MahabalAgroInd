@@ -28,7 +28,7 @@ const Statistics = () => {
   }, []);
 
   return (
-    <div className="min-h-screen w-full md:px-12 px-4 py-20 text-[#00461f]">
+    <div className="min-h-screen w-full md:px-12 px-4 py-20 text-[#2E1403]">
       <h1 className="lg:text-[3vw] md:text-[3.2vw] text-[8vw] mb-4 font-semibold ">Mahabal in Numbers</h1>
       <p className="lg:text-[2.5vw] md:text-[3vw] lg:w-[80%] md:w-[905] md:mb-20 mb-10">
         Our continuously rising success each year,

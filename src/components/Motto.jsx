@@ -2,7 +2,7 @@ import React from 'react'
 import motoImg from "../assets/moto.avif"
 const Motto = () => {
   return (
-    <div className='w-full  h-screen relative text-white'>
+    <div className='w-full  h-screen relative text-[#F6F0E8]'>
       <img className='w-full h-full object-cover object-top' src={motoImg} alt="" />
      <div className='absolute top-10 left-0 lg:px-12 px-6 lg:py-10 py-6 '>
        <h1 className='uppercase lg:text-[2vw] md:text-[3vw] text-[4.5vw]'>Our Motto</h1>

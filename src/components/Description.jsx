@@ -20,7 +20,7 @@ const Description = () => {
       description:
         "We serve farmers across Nagpur Rural and Urban, delivering nutrient-rich compost that reduces the need for chemicals and supports long-term soil vitality. Through innovation and eco-friendly practices, we help build a greener, healthier future for agriculture.",
       img: whoImg,
-      link: "/product",
+      link: "/awareness",
     },
   ];
 

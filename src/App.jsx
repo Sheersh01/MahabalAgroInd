@@ -6,8 +6,9 @@ import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
 import Product from "./pages/Product.jsx";
+import Awareness from "./pages/Awareness.jsx";
 import Footer from "./components/Footer.jsx";
-
+import ScrollToTop from './components/ScrollToTop';
 const App = () => {
   useEffect(() => {
     const lenis = new Lenis({
@@ -31,11 +32,13 @@ const App = () => {
   return (
     <div className="relative font-[gill sans]">
       <Navbar />
+      <ScrollToTop/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/product" element={<Product />} />
+        <Route path="/awareness" element={<Awareness />} />
       </Routes>
       <Footer />
     </div>

@@ -5,7 +5,7 @@ import { FaQuestion } from 'react-icons/fa';
 
 const ContentBox = ({ heading, description, buttonTitle = "Read More", img ,link = "#"}) => {
   return (
-    <div className="group lg:w-1/2 md:w-[50%] lg:pt-10 lg:pb-10 md:py-8 lg:px-8 md:px-6 px-4 py-8 rounded-2xl text-white relative overflow-hidden">
+    <div className="group lg:w-1/2 md:w-[50%] lg:pt-10 lg:pb-10 md:py-8 lg:px-8 md:px-6 px-4 py-8 rounded-2xl text-[#F6F0E8] relative overflow-hidden">
 
       {/* BACKGROUND IMAGE (scaled on hover) */}
       <div

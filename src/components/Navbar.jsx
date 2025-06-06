@@ -86,7 +86,7 @@ const Navbar = () => {
     gsap.to(ref.current, {
       scale: 1.1,
       backgroundColor: "#ffffff",
-      color: "#00461f",
+      color: "#2E1403",
       duration: 0.3,
       ease: "power2.out",
     });
@@ -112,20 +112,20 @@ const Navbar = () => {
       <div
         className={`lg:h-[5vw] w-full flex justify-between items-center lg:pl-24 lg:pr-12 h-[5vw] md:pl-12 pl-2 pr-2 md:pr-10 py-6 transition-all duration-300 ease-in-out ${
           isScrolled
-            ? "bg-[#00461f] backdrop-blur-md shadow-lg"
+            ? "bg-[#2E1403] backdrop-blur-md shadow-lg"
             : "bg-transparent"
         }`}
       >
         <div className="lg:h-40 md:h-20 h-16 lg:translate-y-2 translate-y-1">
           <img className="w-full h-full object-contain" src={Logo} alt="" />
         </div>
-        <div className="flex md:gap-4 gap-1 text-white md:text-[1.5vw] text-[2.5vw]">
+        <div className="flex md:gap-4 gap-1 text-[#F6F0E8] md:text-[1.5vw] text-[2.5vw]">
           <button onClick={handleMenuClick}>
             <h1
               ref={menuBtnRef}
               onMouseEnter={() => handleHoverEnter(menuBtnRef)}
               onMouseLeave={() => handleHoverLeave(menuBtnRef)}
-              className="border-white border md:px-4 md:py-2 px-3 py-2 rounded-full cursor-pointer"
+              className="border-[#F6F0E8] border md:px-4 md:py-2 px-3 py-2 rounded-full cursor-pointer"
             >
               MENU
             </h1>
@@ -136,7 +136,7 @@ const Navbar = () => {
               ref={wtspBtnRef}
               onMouseEnter={() => handleHoverEnter(wtspBtnRef)}
               onMouseLeave={() => handleHoverLeave(wtspBtnRef)}
-              className="border-white border md:px-4 md:py-2 px-3 py-2 rounded-full cursor-pointer flex items-center gap-2 uppercase"
+              className="border-[#F6F0E8] border md:px-4 md:py-2 px-3 py-2 rounded-full cursor-pointer flex items-center gap-2 uppercase"
             >
               WhatsApp <FaWhatsapp />
             </h1>
@@ -149,19 +149,19 @@ const Navbar = () => {
               onClick={toggleLangDropdown}
               onMouseEnter={() => handleHoverEnter(langBtnRef)}
               onMouseLeave={() => handleHoverLeave(langBtnRef)}
-              className="border-white border md:px-4 md:py-2 px-3 py-2 rounded-full cursor-pointer flex items-center gap-2 select-none"
+              className="border-[#F6F0E8] border md:px-4 md:py-2 px-3 py-2 rounded-full cursor-pointer flex items-center gap-2 select-none"
             >
               {currentLang}
               <FaEarthAsia />
             </h1>
             {languageDropdownOpen && (
-              <div className="absolute right-0 mt-2 bg-white text-[#00461f] rounded-lg shadow-md overflow-hidden z-50">
+              <div className="absolute right-0 mt-2 bg-[#F6F0E8] text-[#2E1403] rounded-lg shadow-md overflow-hidden z-50">
                 <a
                   href="https://mahabal-agro.vercel.app.translate.goog/?_x_tr_sl=auto&_x_tr_tl=hi&_x_tr_hl=en"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setCurrentLang("HN")}
-                  className="px-4 py-2 block hover:bg-[#00461f] hover:text-white cursor-pointer transition-all"
+                  className="px-4 py-2 block hover:bg-[#2E1403] hover:text-[#F6F0E8] cursor-pointer transition-all"
                 >
                   Hindi
                 </a>
@@ -170,7 +170,7 @@ const Navbar = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setCurrentLang("MR")}
-                  className="px-4 py-2 block hover:bg-[#00461f] hover:text-white cursor-pointer transition-all"
+                  className="px-4 py-2 block hover:bg-[#2E1403] hover:text-[#F6F0E8] cursor-pointer transition-all"
                 >
                   Marathi
                 </a>
@@ -179,7 +179,7 @@ const Navbar = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setCurrentLang("EN")}
-                  className="px-4 py-2 block hover:bg-[#00461f] hover:text-white cursor-pointer transition-all"
+                  className="px-4 py-2 block hover:bg-[#2E1403] hover:text-[#F6F0E8] cursor-pointer transition-all"
                 >
                   English
                 </a>
@@ -192,7 +192,7 @@ const Navbar = () => {
       {/* Overlay Menu */}
       <div
         ref={menuRef}
-        className="fixed top-0 left-0 w-full h-screen bg-[#00461f] text-white flex flex-col items-center justify-center gap-8 text-4xl z-[2]"
+        className="fixed top-0 left-0 w-full h-screen bg-[#2E1403] text-[#F6F0E8] flex flex-col items-center justify-center gap-8 text-4xl z-[2]"
         style={{
           clipPath: "circle(0% at 50% 0%)",
           WebkitClipPath: "circle(0% at 50% 0%)",
@@ -200,7 +200,7 @@ const Navbar = () => {
       >
         <button
           onClick={handleMenuClick}
-          className="absolute top-10 right-10 text-white text-lg border border-white px-4 py-2 rounded-full"
+          className="absolute top-10 right-10 text-[#F6F0E8] text-lg border border-[#F6F0E8] px-4 py-2 rounded-full"
         >
           CLOSE
         </button>
@@ -225,6 +225,13 @@ const Navbar = () => {
           onClick={handleMenuClick}
         >
           Contact
+        </NavLink>
+        <NavLink
+          className="lg:text-6xl md:text-[5vw]"
+          to="/awareness"
+          onClick={handleMenuClick}
+        >
+          Awareness
         </NavLink>
         <NavLink
           className="lg:text-6xl md:text-[5vw]"

@@ -12,14 +12,14 @@ const About = () => {
   };
 
   return (
-    <div className="min-h-screen w-full bg-white text-[#00461f]">
+    <div className="min-h-screen w-full bg-[#F6F0E8] text-[#2E1403]">
       <PageHeader
         title="About Us"
         breadcrumb="Home / About Us"
         image={aboutUsImg}
       />
       <div className="w-full md:px-12 md:mt-20 px-8 mt-10">
-        <div className="border-[#00461f] border-y-1 md:mb-20 mb-10 flex gap-12 justify-center text-center">
+        <div className="border-[#2E1403] border-y-1 md:mb-20 mb-10 flex gap-12 justify-center text-center">
           <button 
             onClick={() => scrollToSection(aboutUsRef)}
             className="uppercase md:text-[1.5vw] text-[2.5vw] hover:text-green-700 transition-colors cursor-pointer"

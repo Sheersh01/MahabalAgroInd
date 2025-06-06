@@ -2,9 +2,37 @@ import React from "react";
 import {Link} from "react-router-dom";
 import ReadMoreBtn from "./ReadMoreBtn";
 import fertilizerImg from "../assets/fertilizer_6986765.png";
+import Accordion from "../components/Accordion"
 const InfoSection = () => {
+const faqData = [
+  {
+    question: "Who delivers the compost?",
+    answer: "Delivery is handled by our own team to ensure quality and timely service."
+  },
+  {
+    question: "How long does delivery take?",
+    answer: "We deliver within 12 hours of order confirmation in eligible areas."
+  },
+  {
+    question: "Which areas are eligible for delivery?",
+    answer: "Currently, we deliver to Nagpur Rural and Nagpur Urban regions."
+  },
+  {
+    question: "What are the delivery charges or minimum order requirements?",
+    answer: "Delivery charges and minimum order depend on the order size and distance."
+  },
+  {
+    question: "What compost products do you offer?",
+    answer: "We offer two types of compost: Organic Compost and Vermicompost."
+  },
+  {
+    question: "What is special about your compost?",
+    answer: "Our compost is rich in humus, beneficial microbes, and fortified with essential micronutrients for better soil and plant health."
+  }
+];
+
   return (
-    <div className="bg-white text-[#00461f] md:px-12 px-4">
+    <div className="bg-[#F6F0E8] text-[#2E1403] md:px-12 px-4">
       <div className="flex md:flex-row flex-col">
         <div className="lg:w-[40%] md:w-1/2 w-full flex items-center">
         <div className="lg:w-96 md:w-78 lg:h-96 md:h-78 w-72 h-72  rounded-full mx-auto">
@@ -26,6 +54,10 @@ const InfoSection = () => {
          <Link to="/product"> <ReadMoreBtn title="Read More" /></Link>
         </div>
       </div>
+       <div>
+      <h1 className="text-center font-bold text-3xl mt-8 text-[#2E1403]">FAQs</h1>
+      <Accordion data={faqData} />
+    </div>
     </div>
   );
 };

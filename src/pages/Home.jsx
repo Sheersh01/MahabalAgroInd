@@ -9,13 +9,14 @@ import Facts from '../components/Facts'
 const Home = () => {
   return (
     <div className='relative'>   
+   
        <Hero/>
        <Description/>
     <Statistics/>
-<InfoSection/>
 <Motto/>
+<InfoSection/>
 <Testimonials/>
-<Facts/>
+{/* <Facts/> */}
       </div>
   )
 }

@@ -14,14 +14,14 @@ const Contact = () => {
         image={contactUsImg}
       />
 
-      <h1 className="text-center lg:text-[5vw] md:text-[7.5vw] text-[10vw] text-[#00461f] lg:mt-16 mt-10 md:py-10 underline font-semibold">
+      <h1 className="text-center lg:text-[5vw] md:text-[7.5vw] text-[10vw] text-[#2E1403] lg:mt-16 mt-10 md:py-10 underline font-semibold">
         Contact Us
       </h1>
 
       <div className="w-full pb-10 md:py-10 px-4 flex md:flex-row flex-col">
         {/* Left Contact Info */}
         <div className="lg:w-[40%] md:w-1/2 w-full md:p-8 py-8 flex flex-col items-center justify-center">
-          <div className="bg-[#00461f] text-white py-4 px-8 rounded-2xl">
+          <div className="bg-[#2E1403] text-[#F6F0E8] py-4 px-8 rounded-2xl">
             <h1 className="lg:text-[1.2vw] md:text-[1.8vw] text-[4vw]">
               Head Office
             </h1>

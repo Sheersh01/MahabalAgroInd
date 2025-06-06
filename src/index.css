@@ -7,6 +7,9 @@ border-bottom: 5px solid white;
     display: none;
 }
 *::selection{
-    color: white;
-    background-color: green;
+    color: #2E1403;
+    background-color: #F6F0E8;
+}
+html, body {
+background-color: #F6F0E8;
 }
