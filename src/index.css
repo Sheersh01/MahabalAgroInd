@@ -26,7 +26,7 @@
     display: none;
 }
 *{
-    /* user-select: none; */
+    user-select: none;
 }
 html, body {
 background-color: #F6F0E8;

@@ -40,9 +40,9 @@ const faqData = [
         </div>
         </div>
         <div className="lg:w-[60%] md:w-1/2 w-full py-20">
-          <h1 className="lg:text-[3vw] md:text-[3.2vw] text-[8vw] mb-4 font-semibold">Our Product</h1>
+    
           <h1 className="font-semibold lg:text-[4vw] md:text-[4vw] text-[7vw] leading-none pb-8">
-            Engineering Compost: A Smarter Way to Fertilize Naturally
+            Our Product : A Smarter Way to Fertilize Naturally
           </h1>
           <p className="lg:text-[1.2vw] md:text-[1.8vw] text-[4vw] leading-normal">
             Discover the next generation of organic fertilizers — made from
@@ -55,7 +55,10 @@ const faqData = [
         </div>
       </div>
        <div>
-      <h1 className="text-center font-bold text-3xl mt-8 text-[#2E1403]">FAQs</h1>
+      <h1 className="text-center lg:text-[5vw] md:text-[7.5vw] text-[10vw] text-[#2E1403] lg:mt-16 mt-10 md:py-2 underline font-semibold">
+       FAQ
+      </h1>
+
       <Accordion data={faqData} />
     </div>
     </div>
