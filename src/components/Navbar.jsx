@@ -60,55 +60,56 @@ const Navbar = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
- const handleMenuClick = () => {
-  const tl = gsap.timeline();
+  const handleMenuClick = () => {
+    const tl = gsap.timeline();
 
-  const items = overlayContentRef.current.querySelectorAll("a, p, button, img");
+    const items =
+      overlayContentRef.current.querySelectorAll("a, p, button, img");
 
-  if (!isOpen) {
-    tl.to(menuRef.current, {
-      clipPath: "circle(150% at 50% 0%)",
-      duration: 0.8,
-      ease: "power3.inOut",
-    });
-
-    tl.fromTo(
-      items,
-      { autoAlpha: 0, y: 50 },
-      {
-        autoAlpha: 1,
-        y: 0,
-        duration: 0.8,
-        ease: "power3.out",
-        stagger: 0.15, // <- Dramatic stagger
-      },
-      "-=0.4"
-    );
-  } else {
-    tl.to(items, {
-      autoAlpha: 0,
-      y: 50,
-      duration: 0.4,
-      ease: "power3.in",
-      stagger: {
-        each: 0.1,
-        from: "end", // reverse order fade-out
-      },
-    });
-
-    tl.to(
-      menuRef.current,
-      {
-        clipPath: "circle(0% at 50% 0%)",
+    if (!isOpen) {
+      tl.to(menuRef.current, {
+        clipPath: "circle(150% at 50% 0%)",
         duration: 0.8,
         ease: "power3.inOut",
-      },
-      "-=0.2"
-    );
-  }
+      });
 
-  setIsOpen(!isOpen);
-};
+      tl.fromTo(
+        items,
+        { autoAlpha: 0, y: 50 },
+        {
+          autoAlpha: 1,
+          y: 0,
+          duration: 0.8,
+          ease: "power3.out",
+          stagger: 0.15, // <- Dramatic stagger
+        },
+        "-=0.4"
+      );
+    } else {
+      tl.to(items, {
+        autoAlpha: 0,
+        y: 50,
+        duration: 0.4,
+        ease: "power3.in",
+        stagger: {
+          each: 0.1,
+          from: "end", // reverse order fade-out
+        },
+      });
+
+      tl.to(
+        menuRef.current,
+        {
+          clipPath: "circle(0% at 50% 0%)",
+          duration: 0.8,
+          ease: "power3.inOut",
+        },
+        "-=0.2"
+      );
+    }
+
+    setIsOpen(!isOpen);
+  };
 
   const handleHoverEnter = (ref) => {
     gsap.to(ref.current, {
@@ -144,7 +145,10 @@ const Navbar = () => {
         }`}
       >
         <div className="lg:h-40 md:h-20 h-16 lg:translate-y-2 translate-y-1">
-          <img className="w-full h-full object-contain" src={Logo} alt="" />
+          <Link to="/">
+            {" "}
+            <img className="w-full h-full object-contain" src={Logo} alt="" />
+          </Link>
         </div>
         <div className="flex md:gap-4 gap-1 text-[#F6F0E8] lg:text-[1.2vw] md:text-[1.5vw] text-[2.5vw]">
           <button onClick={handleMenuClick}>
@@ -245,7 +249,7 @@ const Navbar = () => {
           ref={overlayContentRef}
           className="flex lg:flex-row flex-col lg:py-24 justify-evenly lg:mt-20 md:mt-10 px-4 font-thin"
         >
-          <div className="flex flex-col md:gap-8 gap-6 md:w-[40%] w-full mb-10">
+          <div className="flex flex-col gap-6 md:w-[40%] w-full mb-10">
             {["/", "/about", "/contact", "/awareness", "/product"].map(
               (path, index) => (
                 <NavLink
@@ -261,15 +265,18 @@ const Navbar = () => {
               )
             )}
           </div>
-          <div className="lg:w-[50%] w-full mb-20 lg:-translate-y-10">
+          <div className="lg:w-[50%] w-full  lg:-translate-y-10">
             <img className="lg:block hidden w-50 h-50" src={Logo} alt="" />
             <p className="lg:text-[2vw] md:text-[3vw] text-[5vw] lg:leading-none md:leading-8 leading-6 mb-4 font-thin">
               Deal with a company that lives and breathes this sector, and that
               can bring greater depth and scale to your marketing efforts.
             </p>
-            <button className="flex items-center gap-2 hover:gap-4 transition-all lg:text-[1.2vw] md:text-[3.5vw] text-[5vw] text-[#D98324] font-semibold">
-              Let's talk <FaArrowRightLong />
-            </button>
+            <Link to="/contact">
+              {" "}
+              <button className="flex items-center gap-2 hover:gap-4 transition-all lg:text-[1.2vw] md:text-[3.5vw] text-[5vw] text-[#D98324] font-semibold">
+                Let's talk <FaArrowRightLong />
+              </button>
+            </Link>
           </div>
         </div>
       </div>

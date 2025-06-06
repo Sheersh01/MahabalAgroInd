@@ -18,7 +18,7 @@ const About = () => {
     <div className="min-h-screen w-full bg-[#F6F0E8] text-[#2E1403]">
       <PageHeader
         title="About Us"
-        breadcrumb="Home / About Us"
+        breadcrumb=" / About Us"
         image={aboutUsImg}
       />
       

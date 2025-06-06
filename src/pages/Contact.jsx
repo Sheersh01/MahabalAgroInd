@@ -10,7 +10,7 @@ const Contact = () => {
     <div className="min-h-screen w-full">
       <PageHeader
         title="Contact Us"
-        breadcrumb="Home / Contact Us"
+        breadcrumb=" / Contact Us"
         image={contactUsImg}
       />
 

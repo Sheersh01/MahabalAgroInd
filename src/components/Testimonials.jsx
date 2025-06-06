@@ -33,7 +33,7 @@ const Testimonials = () => {
         {testimonialsData.map(({ id, name, role, photo, quote }) => (
           <div
             key={id}
-            className="bg-[#F6F0E8] rounded-lg shadow-lg p-6 flex flex-col items-center text-center"
+            className="bg-[#F6F0E8] rounded-lg border border-[#2E1403] shadow-[#2E1403]/20 shadow-md p-6 flex flex-col items-center text-center"
           >
             <img
               src={photo}

@@ -154,7 +154,7 @@ const Description = () => {
           const span2Position = position;
           position += 1;
           
-          const text3 = "industry. With years of experience, we're committed to providing best solutions for farmers.";
+          const text3 = "industry. With years of experience, we're committed to provide best solutions for farmers.";
           const wrapped3 = wrapWordsWithPositions(text3, position);
           position = wrapped3.endIndex;
           

@@ -19,8 +19,8 @@ const ContentBox = ({ heading, description, buttonTitle = "Read More", img ,link
       {/* CONTENT */}
       <div className="relative z-20 p-4">
         <h1 className="lg:text-[3vw] md:text-[4vw] text-[5vw]"><FaQuestion /></h1>
-        <h1 className="font-bold lg:text-[3vw] text-[5vw] lg:my-12 my-6 capitalize">{heading}</h1>
-        <p className="lg:text-[1.8vw] md:text-[2.5vw] text-[4vw] leading-none">
+        <h1 className="font-bold lg:text-[3vw] md:text-[4vw] text-[5vw] lg:my-12 my-6 capitalize">{heading}</h1>
+        <p className="lg:text-[1.8vw] md:text-[2vw] text-[4vw] leading-none">
           {description}
         </p>
        <Link to={link}> <ReadMoreBtn  title={buttonTitle} /></Link>
