@@ -187,7 +187,7 @@ const Navbar = () => {
             {languageDropdownOpen && (
               <div className="absolute right-0 mt-2 bg-[#F6F0E8] text-[#2E1403] rounded-lg shadow-md overflow-hidden z-50">
                 <a
-                  href="https://mahabal-agro-ind.translate.goog/?_x_tr_sl=auto&_x_tr_tl=hi&_x_tr_hl=en"
+                  href="https://mahabal-agro-ind.vercel.app.translate.goog/?_x_tr_sl=auto&_x_tr_tl=hi&_x_tr_hl=en"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setCurrentLang("HN")}
@@ -196,7 +196,7 @@ const Navbar = () => {
                   Hindi
                 </a>
                 <a
-                  href="https://mahabal-agro-ind.translate.goog/?_x_tr_sl=auto&_x_tr_tl=mr&_x_tr_hl=en"
+                  href="https://mahabal-agro-ind.vercel.app.translate.goog/?_x_tr_sl=auto&_x_tr_tl=mr&_x_tr_hl=en"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setCurrentLang("MR")}
@@ -205,7 +205,7 @@ const Navbar = () => {
                   Marathi
                 </a>
                 <a
-                  href="https://mahabal-agro-ind"
+                  href="https://mahabal-agro-ind.vercel.app"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setCurrentLang("EN")}
@@ -273,7 +273,7 @@ const Navbar = () => {
             </p>
             <Link to="/contact">
               {" "}
-              <button className="flex items-center gap-2 hover:gap-4 transition-all lg:text-[1.2vw] md:text-[3.5vw] text-[5vw] text-[#D98324] font-semibold">
+              <button   onClick={handleMenuClick} className="flex items-center gap-2 hover:gap-4 transition-all lg:text-[1.2vw] md:text-[3.5vw] text-[5vw] text-[#D98324] font-semibold">
                 Let's talk <FaArrowRightLong />
               </button>
             </Link>
