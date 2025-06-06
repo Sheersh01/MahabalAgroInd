@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import PageHeader from "../components/PageHeader";
-import aboutUsImg from "../assets/about.avif";
-import about2Img from "../assets/about2.avif";
+import aboutUsImg from "../assets/about2.avif";
+import about2Img from "../assets/about5.avif";
 import about3Img from "../assets/about3.avif";
 import about4Img from "../assets/about4.avif";
 

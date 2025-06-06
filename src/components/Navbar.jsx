@@ -146,7 +146,7 @@ const Navbar = () => {
         <div className="lg:h-40 md:h-20 h-16 lg:translate-y-2 translate-y-1">
           <img className="w-full h-full object-contain" src={Logo} alt="" />
         </div>
-        <div className="flex md:gap-4 gap-1 text-[#F6F0E8] md:text-[1.5vw] text-[2.5vw]">
+        <div className="flex md:gap-4 gap-1 text-[#F6F0E8] lg:text-[1.2vw] md:text-[1.5vw] text-[2.5vw]">
           <button onClick={handleMenuClick}>
             <h1
               ref={menuBtnRef}

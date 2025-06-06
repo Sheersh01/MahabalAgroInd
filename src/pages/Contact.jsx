@@ -1,6 +1,6 @@
 import React from "react";
 import PageHeader from "../components/PageHeader";
-import contactUsImg from "../assets/contactUs1.png";
+import contactUsImg from "../assets/contactUs6.jpg";
 import { FaLocationDot } from "react-icons/fa6";
 import GoogleMap from "../components/GoogleMap";
 import ContactForm from "../components/ContactForm"; // new component
