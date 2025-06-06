@@ -22,23 +22,23 @@ const About = () => {
         image={aboutUsImg}
       />
       
-      <div className="w-full md:px-12 md:mt-20 px-8 mt-10">
+      <div className="w-full md:px-12 md:mt-20 px-6 mt-10">
         <div className="border-[#2E1403] border-y-1 md:mb-20 mb-10 flex gap-12 justify-center text-center">
           <button 
             onClick={() => scrollToSection(aboutUsRef)}
-            className="uppercase md:text-[1.5vw] text-[2.5vw] hover:text-[#D98324] transition-colors cursor-pointer"
+            className="uppercase md:text-[1.5vw] text-[3vw] hover:text-[#D98324] transition-colors cursor-pointer"
           >
             About Us
           </button>
           <button 
             onClick={() => scrollToSection(valuesRef)}
-            className="uppercase md:text-[1.5vw] text-[2.5vw] hover:text-[#D98324] transition-colors cursor-pointer"
+            className="uppercase md:text-[1.5vw] text-[3vw] hover:text-[#D98324] transition-colors cursor-pointer"
           >
             Our Values
           </button>
           <button 
             onClick={() => scrollToSection(historyRef)}
-            className="uppercase md:text-[1.5vw] text-[2.5vw] hover:text-[#D98324] transition-colors cursor-pointer"
+            className="uppercase md:text-[1.5vw] text-[3vw] hover:text-[#D98324] transition-colors cursor-pointer"
           >
             Our History
           </button>
@@ -55,7 +55,7 @@ const About = () => {
             </div>
           </div>
           <div className="md:w-1/2 w-full flex flex-col justify-center lg:px-8 md:px-4 lg:text-[1vw] md:text-[1.5vw]">
-           <h1 className="font-semibold lg:text-[2.8vw] md:text-[3.2vw] text-[6vw] leading-none tracking-tight">
+           <h1 className="font-semibold lg:text-[2.8vw] md:text-[3.2vw] text-[8vw] ">
             About Us
             </h1>
             <h1 className="my-4">
@@ -78,7 +78,7 @@ const About = () => {
             </div>
           </div>
           <div className="md:w-1/2 w-full flex flex-col justify-center lg:px-8 md:px-4 lg:text-[1vw] md:text-[1.5vw]">
-            <h1 className="font-semibold lg:text-[2.8vw] md:text-[3.2vw] text-[6vw] leading-none tracking-tight">
+            <h1 className="font-semibold lg:text-[2.8vw] md:text-[3.2vw] text-[8vw] ">
             Our Values
             </h1>
             <h1 className="my-4">
@@ -101,7 +101,7 @@ const About = () => {
             </div>
           </div>
           <div className="md:w-1/2 w-full flex flex-col justify-center lg:px-8 md:px-4 lg:text-[1vw] md:text-[1.5vw]">
-          <h1 className="font-semibold lg:text-[2.8vw] md:text-[3.2vw] text-[6vw] leading-none tracking-tight">
+          <h1 className="font-semibold lg:text-[2.8vw] md:text-[3.2vw] text-[8vw] ">
             Our History
             </h1>
             <h1 className="my-4">

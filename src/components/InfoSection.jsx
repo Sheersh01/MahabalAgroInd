@@ -18,7 +18,7 @@ const faqData = [
     answer: "Currently, we deliver to Nagpur Rural and Nagpur Urban regions."
   },
   {
-    question: "What are the delivery charges or minimum order requirements?",
+    question: "What are the delivery charges ?",
     answer: "Delivery charges and minimum order depend on the order size and distance."
   },
   {

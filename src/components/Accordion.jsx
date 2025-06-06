@@ -15,7 +15,7 @@ const AccordionItem = ({ question, answer }) => {
 
   return (
     <div
-      className={`border mb-2 border-gray-300 px-8 py-8 rounded-md transition-colors duration-300 ${
+      className={`border mb-2 border-gray-300 md:p-8 px-4 py-2 rounded-md transition-colors duration-300 ${
         isOpen ? "bg-[#2E1403] text-[#F6F0E8]" : "bg-[#F6F0E8] text-[#2E1403]"
       }`}
     >
@@ -36,7 +36,7 @@ const AccordionItem = ({ question, answer }) => {
         style={{ maxHeight: height }}
         className="overflow-hidden transition-max-height duration-300 ease-in-out"
       >
-        <div className="pb-4 text-[#F6F0E8] text-[1.3vw]">{answer}</div>
+        <div className="pb-4 text-[#F6F0E8] lg:text-[1.3vw] text-[4vw]">{answer}</div>
       </div>
     </div>
   );

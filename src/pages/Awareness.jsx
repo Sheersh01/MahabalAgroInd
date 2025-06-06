@@ -23,29 +23,29 @@ const Awareness = () => {
         breadcrumb="Home / awareness"
         image={productImg}
       />
-      <div className="w-full md:px-12 md:mt-20 px-8 mt-10">
+      <div className="w-full md:px-12 md:mt-20 px-6 mt-10">
         <div className="border-[#2E1403] border-y-1 md:mb-20 mb-10 flex md:gap-12 gap-2 justify-center flex-wrap text-center">
           <button 
             onClick={() => scrollToSection(aboutRef)}
-            className="uppercase md:text-[1.5vw] text-[2.5vw] hover:text-[#D98324] transition-colors cursor-pointer"
+            className="uppercase md:text-[1.5vw] text-[3vw] hover:text-[#D98324] transition-colors cursor-pointer"
           >
-            About Our Compost
+            About Compost
           </button>
           <button 
             onClick={() => scrollToSection(benefitsRef)}
-            className="uppercase md:text-[1.5vw] text-[2.5vw] hover:text-[#D98324] transition-colors cursor-pointer"
+            className="uppercase md:text-[1.5vw] text-[3vw] hover:text-[#D98324] transition-colors cursor-pointer"
           >
             Benefits
           </button>
           <button 
             onClick={() => scrollToSection(usageRef)}
-            className="uppercase md:text-[1.5vw] text-[2.5vw] hover:text-[#D98324] transition-colors cursor-pointer"
+            className="uppercase md:text-[1.5vw] text-[3vw] hover:text-[#D98324] transition-colors cursor-pointer"
           >
             Usage Guide
           </button>
           <button 
             onClick={() => scrollToSection(sustainableRef)}
-            className="uppercase md:text-[1.5vw] text-[2.5vw] hover:text-[#D98324] transition-colors cursor-pointer"
+            className="uppercase md:text-[1.5vw] text-[3vw] hover:text-[#D98324] transition-colors cursor-pointer"
           >
             Sustainable Farming
           </button>
@@ -62,7 +62,7 @@ const Awareness = () => {
             </div>
           </div>
           <div className="md:w-1/2 w-full flex flex-col items-center justify-center lg:px-8 md:px-4 lg:text-[1vw] md:text-[1.5vw]">
-            <h1 className="font-semibold lg:text-[2.8vw] md:text-[3.2vw] text-[6vw] leading-none tracking-tight">
+            <h1 className="font-semibold lg:text-[2.8vw] md:text-[3.2vw] text-[8vw] leading-none tracking-tight">
               What is EcoHarvest Engineering Compost?
             </h1>
             <h1 className="my-4">
@@ -98,7 +98,7 @@ const Awareness = () => {
             </div>
           </div>
           <div className="md:w-1/2 w-full flex flex-col items-center justify-center lg:px-8 md:px-4 lg:text-[1vw] md:text-[1.5vw]">
-            <h1 className="font-semibold lg:text-[2.8vw] md:text-[3.2vw] text-[6vw] leading-none tracking-tight">
+            <h1 className="font-semibold lg:text-[2.8vw] md:text-[3.2vw] text-[8vw] leading-none tracking-tight">
               Why Choose This Compost Over Raw Cow Dung or Chemical Fertilizers?
             </h1>
             <h1 className="my-4">
@@ -132,7 +132,7 @@ const Awareness = () => {
             </div>
           </div>
           <div className="md:w-1/2 w-full flex flex-col items-center justify-center lg:px-8 md:px-4 lg:text-[1vw] md:text-[1.5vw]">
-            <h1 className="font-semibold lg:text-[2.8vw] md:text-[3.2vw] text-[6vw] leading-none tracking-tight">
+            <h1 className="font-semibold lg:text-[2.8vw] md:text-[3.2vw] text-[8vw] leading-none tracking-tight">
               How to Use EcoHarvest Engineering Compost
             </h1>
             <h1 className="my-4">
@@ -163,7 +163,7 @@ const Awareness = () => {
             </div>
           </div>
           <div className="md:w-1/2 w-full flex flex-col items-center justify-center lg:px-8 md:px-4 lg:text-[1vw] md:text-[1.5vw]">
-            <h1 className="font-semibold lg:text-[2.8vw] md:text-[3.2vw] text-[6vw] leading-none tracking-tight">
+            <h1 className="font-semibold lg:text-[2.8vw] md:text-[3.2vw] text-[8vw] leading-none tracking-tight">
               Promoting Sustainable Farming and Soil Health
             </h1>
             <h1 className="my-4">

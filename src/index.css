@@ -1,8 +1,27 @@
 @import "tailwindcss";
 
-a.active{
-border-bottom: 2px solid white;
+.only {
+  position: relative;
 }
+.only::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: white;
+  transition: width 0.3s ease-in-out;
+}
+
+.only:hover::after {
+  width: 100%;
+}
+
+.only.active::after {
+  width: 100%;
+}
+
 *::-webkit-scrollbar{
     display: none;
 }

@@ -1,17 +1,52 @@
-import React from 'react'
-import heroImg from "../assets/hero2.avif"
-const Hero = () => {
-  return (
-    <div className='relative h-screen text-[#F6F0E8] w-full bg-black'>
-      <img className='w-full h-full object-cover object-top opacity-[60%] bg-black' src={heroImg} alt="" />
-     <div className='absolute top-1/2 -translate-y-1/2 lg:px-20 md:px-4 w-full md:space-y-2 space-y-12'>
-           <h1 className='lg:text-[8vw] md:text-[10vw] text-[12vw] leading-none uppercase md:text-left text-center '>Valorization</h1>
-           <h1 className='lg:text-[8vw] md:text-[10vw] text-[12vw] leading-none uppercase md:text-right  text-center lg:pr-80 md:pr-20'>of</h1>
-        <h1 className='lg:text-[8vw] md:text-[10vw] text-[12vw] leading-none uppercase lg:pl-20 md:pl-20 text-center'>organic </h1>
-        <h1 className='lg:text-[8vw] md:text-[10vw] text-[12vw] leading-none uppercase md:text-right text-center lg:pr-20 md:pr-10'> waste</h1>
-     </div>
-    </div>
-  )
-}
+import React, { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+import heroImg from '../assets/hero2.avif';
 
-export default Hero
+const Hero = () => {
+  const linesRef = useRef([]);
+
+  useEffect(() => {
+    gsap.fromTo(
+      linesRef.current,
+      { autoAlpha: 0, y: 50 },
+      {
+        autoAlpha: 1,
+        y: 0,
+        duration: 1,
+        ease: 'power3.out',
+        stagger: 0.3, // dramatic fade-in effect
+      }
+    );
+  }, []);
+
+  return (
+    <div className='relative h-screen text-[#F6F0E8] w-full bg-black overflow-hidden'>
+      <img
+        className='w-full h-full object-cover object-top opacity-[60%] bg-black'
+        src={heroImg}
+        alt='Hero Background'
+      />
+      <div className='absolute top-1/2 -translate-y-1/2 lg:px-20 md:px-4 w-full md:space-y-2 space-y-12'>
+        {['Valorization', 'of', 'organic', 'waste'].map((word, index) => (
+          <h1
+            key={index}
+            ref={(el) => (linesRef.current[index] = el)}
+            className={`lg:text-[8vw] md:text-[10vw] text-[12vw] leading-none uppercase text-center ${
+              index === 0
+                ? 'md:text-left'
+                : index === 1
+                ? 'md:text-right lg:pr-80 md:pr-20'
+                : index === 2
+                ? 'lg:pl-20 md:pl-20'
+                : 'md:text-right lg:pr-20 md:pr-10'
+            }`}
+          >
+            {word}
+          </h1>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Hero;

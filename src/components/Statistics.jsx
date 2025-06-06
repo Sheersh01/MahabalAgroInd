@@ -33,7 +33,7 @@ const Statistics = () => {
       const direction = currentScroll > lastScroll.current ? "down" : "up";
 
       // Adjust rotation step size as needed
-      rotation.current += direction === "down" ? 0.05 : -0.05;
+      rotation.current += direction === "down" ? 0.08 : -0.08;
 
       if (rotateRef.current) {
         rotateRef.current.style.transform = `rotate(${rotation.current}deg)`;
@@ -259,7 +259,7 @@ const Statistics = () => {
             alt=""
           />
           <img
-            className="lg:w-24 md:w-16 w-14 absolute top-0 lg:left-96 md:left-60 left-56"
+            className="lg:w-24 md:w-16 w-14 absolute top-0 xl:left-96 lg:left-72 md:left-60 left-56"
             src={analyticsImg}
             alt=""
           />
