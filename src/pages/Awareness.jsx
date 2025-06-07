@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import PageHeader from "../components/PageHeader";
 import productImg from "../assets/awareness.avif";
-import awareness1Img from "../assets/awareness1.avif";
+import awareness1Img from "../assets/awareness5.avif";
 import awareness2Img from "../assets/awareness2.avif";
 import awareness3Img from "../assets/awareness3.avif";
 import awareness4Img from "../assets/awareness4.avif";

@@ -5,18 +5,16 @@ import Statistics from '../components/Statistics'
 import InfoSection from '../components/InfoSection'
 import Motto from '../components/Motto'
 import Testimonials from '../components/Testimonials'
-import Facts from '../components/Facts'
+
 const Home = () => {
   return (
     <div className='relative'>   
-   
        <Hero/>
        <Description/>
     <Statistics/>
 <Motto/>
 <InfoSection/>
 <Testimonials/>
-{/* <Facts/> */}
       </div>
   )
 }

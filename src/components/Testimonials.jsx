@@ -1,22 +1,22 @@
 import React from 'react';
-
+import profile from "../assets/profile.png"
 const testimonialsData = [
   {
     id: 1,
     name: "Rakesh Kumar",
-    photo: "https://randomuser.me/api/portraits/women/68.jpg",
+    photo: profile,
     quote: "This product has transformed the way our team works. Highly recommend to anyone looking for quality and reliability."
   },
   {
     id: 2,
     name: "Aditya Srivastava",
-    photo: "https://randomuser.me/api/portraits/men/75.jpg",
+    photo: profile,
     quote: "Exceptional service and support. The team went above and beyond to meet our needs."
   },
   {
     id: 3,
     name: "Aashish Sinha",
-    photo: "https://randomuser.me/api/portraits/women/45.jpg",
+    photo: profile,
     quote: "This product has transformed the way our team works. Highly recommend to anyone looking for quality and reliability."
   }
 ];
