@@ -187,7 +187,7 @@ const Navbar = () => {
             {languageDropdownOpen && (
               <div className="absolute right-0 mt-2 bg-[#F6F0E8] text-[#2E1403] rounded-lg shadow-md overflow-hidden z-50">
                 <a
-                  href="https://www.sheersh.xyz/.translate.goog/?_x_tr_sl=auto&_x_tr_tl=hi&_x_tr_hl=en"
+                  href="https://www.sheersh.xyz.translate.goog/?_x_tr_sl=auto&_x_tr_tl=hi&_x_tr_hl=en"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setCurrentLang("HN")}
@@ -196,7 +196,7 @@ const Navbar = () => {
                   Hindi
                 </a>
                 <a
-                  href="https://www.sheersh.xyz/.translate.goog/?_x_tr_sl=auto&_x_tr_tl=mr&_x_tr_hl=en"
+                  href="https://www.sheersh.xyz.translate.goog/?_x_tr_sl=auto&_x_tr_tl=mr&_x_tr_hl=en"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setCurrentLang("MR")}
@@ -205,7 +205,7 @@ const Navbar = () => {
                   Marathi
                 </a>
                 <a
-                  href="https://www.sheersh.xyz/"
+                  href="https://www.sheersh.xyz"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setCurrentLang("EN")}
