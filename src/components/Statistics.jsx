@@ -214,7 +214,7 @@ const Statistics = () => {
       </h1>
       <p 
         ref={subtitleRef}
-        className="lg:text-[2.5vw] md:text-[3vw] lg:w-[80%] md:w-[905] md:mb-20 mb-10"
+        className="lg:text-[2.5vw] md:text-[3vw] lg:w-[80%] md:w-[95%] md:mb-20 mb-10"
       >
         {wrapWordsWithPositions("Our continuously rising success each year, is making us one of Nagpur's organic fertilizer producers.").elements}
       </p>
