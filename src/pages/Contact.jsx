@@ -45,10 +45,10 @@ const Contact = () => {
 
         {/* Right Contact Form */}
         <div className="lg:w-[60%] md:w-1/2 w-full lg:px-12 lg:py-8 md:px-8 md:py-4">
-          <h1 className="lg:text-[2vw] md:text-[4vw] text-[10vw] text-center pb-10">
+          <h1 className="lg:text-[2vw] md:text-[4vw] text-[10vw] text-center pb-10 font-semibold text-[#2E1403]">
             {t("getInTouch")}
           </h1>
-          <ContactForm />
+          <ContactForm send={ t("send")}/>
         </div>
       </div>
 

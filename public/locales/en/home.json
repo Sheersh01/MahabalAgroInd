@@ -11,21 +11,25 @@
     "contentSections": [
       {
         "heading": "Who are we. . .",
-        "description": "We are Mahabal Agro Industry, committed to converting organic waste into high-quality compost using our specialized engineering compost system. Our goal is to improve soil health and promote sustainable agriculture through efficient waste valorization."
+        "description": "We are Mahabal Agro Industry, committed to converting organic waste into high-quality compost using our specialized engineering compost system. Our goal is to improve soil health and promote sustainable agriculture through efficient waste valorization.",
+        "buttonTitle":"Read More"
       },
       {
         "heading": "What we do. . .",
-        "description": "We process organic waste from sugar industries, mushroom farms, and gaushalas across Nagpur, transforming it into nutrient-rich, biologically active compost. This reduces reliance on chemical fertilizers and supports eco-friendly, sustainable farming practices."
+        "description": "We process organic waste from sugar industries, mushroom farms, and gaushalas across Nagpur, transforming it into nutrient-rich, biologically active compost. This reduces reliance on chemical fertilizers and supports eco-friendly, sustainable farming practices.",
+        "buttonTitle":"Read More"
       }
     ],
     "contentSections2": [
       {
         "heading": "Industries We Serve",
-        "description": "At Mahabal Agro Industry, we specialize in managing organic waste from diverse sectors such as biomass-based industries, food processing units, and agricultural setups. Our goal is to convert these waste streams into valuable, nutrient-rich compost through our advanced engineering compost system—improving soil vitality and driving sustainable farming."
+        "description": "At Mahabal Agro Industry, we specialize in managing organic waste from diverse sectors such as biomass-based industries, food processing units, and agricultural setups. Our goal is to convert these waste streams into valuable, nutrient-rich compost through our advanced engineering compost system—improving soil vitality and driving sustainable farming.",
+             "buttonTitle":"Read More"
       },
       {
         "heading": "Our Composting System",
-        "description": "Our composting system is built on scientific principles, ensuring efficient decomposition and high-quality output. We optimize key parameters like particle size, oxygen circulation, temperature control, and moisture balance to convert organic waste into mature, bioactive compost that enhances soil structure and crop performance."
+        "description": "Our composting system is built on scientific principles, ensuring efficient decomposition and high-quality output. We optimize key parameters like particle size, oxygen circulation, temperature control, and moisture balance to convert organic waste into mature, bioactive compost that enhances soil structure and crop performance.",
+        "buttonTitle":"Read More"
       }
     ]
   },

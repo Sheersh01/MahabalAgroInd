@@ -11,6 +11,7 @@ const Facts = ({ contents }) => {
             description={item.description}
             img={item.img}
             link={item.link}
+            buttonTitle={item.buttonTitle}
           />
         ))}
       </div>

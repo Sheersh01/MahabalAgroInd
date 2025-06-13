@@ -64,7 +64,7 @@ const Description = ({ contents }) => {
   }, []);
 
   const wrapWordsWithPositions = (text, startIndex = 0) => {
-    const splitter = new GraphemeSplitter(); // ✅ Use grapheme splitter
+    const splitter = new GraphemeSplitter(); 
     const words = text.split(" ");
     let currentIndex = startIndex;
 
@@ -110,7 +110,6 @@ const Description = ({ contents }) => {
     };
   };
 
-  // 🔤 Localized animated text
   const part1 = t("description.animatedText.part1");
   const part2 = t("description.animatedText.part2");
   const part3 = t("description.animatedText.part3");
@@ -167,6 +166,7 @@ const Description = ({ contents }) => {
             description={item.description}
             img={item.img}
             link={item.link}
+            buttonTitle={item.buttonTitle}
           />
         ))}
       </div>
