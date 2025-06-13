@@ -1,0 +1,101 @@
+{
+  "hero": {
+    "title": ["Valorization", "of", "organic", "waste"]
+  },
+  "description": {
+    "animatedText": {
+      "part1": "We're passionate about modernizing",
+      "part2": "agriculture. Our team of experts is dedicated to bringing latest technology to farming",
+      "part3": "industry. With years of experience, we're committed to provide best solutions for farmers."
+    },
+    "contentSections": [
+      {
+        "heading": "Who are we. . .",
+        "description": "We are Mahabal Agro Industry, committed to converting organic waste into high-quality compost using our specialized engineering compost system. Our goal is to improve soil health and promote sustainable agriculture through efficient waste valorization."
+      },
+      {
+        "heading": "What we do. . .",
+        "description": "We process organic waste from sugar industries, mushroom farms, and gaushalas across Nagpur, transforming it into nutrient-rich, biologically active compost. This reduces reliance on chemical fertilizers and supports eco-friendly, sustainable farming practices."
+      }
+    ],
+    "contentSections2": [
+      {
+        "heading": "Industries We Serve",
+        "description": "At Mahabal Agro Industry, we specialize in managing organic waste from diverse sectors such as biomass-based industries, food processing units, and agricultural setups. Our goal is to convert these waste streams into valuable, nutrient-rich compost through our advanced engineering compost system—improving soil vitality and driving sustainable farming."
+      },
+      {
+        "heading": "Our Composting System",
+        "description": "Our composting system is built on scientific principles, ensuring efficient decomposition and high-quality output. We optimize key parameters like particle size, oxygen circulation, temperature control, and moisture balance to convert organic waste into mature, bioactive compost that enhances soil structure and crop performance."
+      }
+    ]
+  },
+    "statistics": {
+    "title": "Mahabal in Numbers",
+    "subtitle": "Our continuously rising success each year is making us one of Nagpur's top organic fertilizer producers.",
+      "employee":"employee",
+    "warehouses":"warehouses",
+    "products":"products",
+    "experience":"experience",
+    "data": {
+      "employees": 20,
+      "warehouses": 5,
+      "products": 2,
+      "experience": 2
+    }
+  },
+  "motto": {
+    "heading": "Our Motto",
+    "statement": "We are dedicated to caring for the soil in a responsible way, strengthening crop resilience, and minimizing the use of chemical fertilizers. With our innovative approach and unwavering commitment, we aim to build healthy agricultural ecosystems and ensure long-term environmental sustainability for future generations."
+  },
+  "info": {
+    "heading": "Our Product: Smarter, Sustainable Fertilization",
+    "description": "Experience the future of farming with our engineered organic compost—crafted from biomass, cow dung, cow urine, and fortified with beneficial cultures like Trichoderma and Bio-NPK. A clean, eco-friendly alternative to chemical and raw waste fertilizers, it enhances soil structure, boosts productivity, and supports long-term agricultural sustainability.",
+    "button": "Read More"
+  },
+  "faq": {
+    "heading": "FAQ",
+    "items": [
+      {
+        "question": "Who delivers the compost?",
+        "answer": "Delivery is handled by our own team to ensure quality and timely service."
+      },
+      {
+        "question": "How long does delivery take?",
+        "answer": "We deliver within 12 hours of order confirmation in eligible areas."
+      },
+      {
+        "question": "Which areas are eligible for delivery?",
+        "answer": "Currently, we deliver to Nagpur Rural and Nagpur Urban regions."
+      },
+      {
+        "question": "What are the delivery charges?",
+        "answer": "Delivery charges and minimum order depend on the order size and distance."
+      },
+      {
+        "question": "What compost products do you offer?",
+        "answer": "We offer two types of compost: Organic Compost and Vermicompost."
+      },
+      {
+        "question": "What is special about your compost?",
+        "answer": "Our compost is rich in humus, beneficial microbes, and fortified with essential micronutrients for better soil and plant health."
+      }
+    ]
+  },
+  "testimonials": {
+    "heading": "Our Clients",
+    "items": [
+      {
+        "name": "Gorakshan Anusandhan Kendra",
+        "quote": "This product has transformed the way our team works. Highly recommend to anyone looking for quality and reliability."
+      },
+      {
+        "name": "Aditya Srivastava",
+        "quote": "Exceptional service and support. The team went above and beyond to meet our needs."
+      },
+      {
+        "name": "Aashish Sinha",
+        "quote": "This product has transformed the way our team works. Highly recommend to anyone looking for quality and reliability."
+      }
+    ]
+  }
+}

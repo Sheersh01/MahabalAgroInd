@@ -1,0 +1,24 @@
+{
+  "title": "About Us",
+  "breadcrumb": "/ About Us",
+  "tabs": {
+    "about": "About Us",
+    "values": "Our Values",
+    "history": "Our History"
+  },
+  "about": {
+    "heading": "About Us",
+    "p1": "At Mahabal Agro Industry, our mission is to redefine agricultural practices by introducing sustainable and science-backed composting solutions. We focus on producing 'engineering compost' from organic waste like sugar industry byproducts, mushroom residue, and cow-based waste from gaushalas—creating a powerful alternative to traditional vermicompost.",
+    "p2": "Our compost is enriched with essential microbes, micronutrients, and antifungal properties, designed to improve soil health, increase crop yields, and reduce dependency on chemical fertilizers. By turning biomass and waste into valuable compost, we aim to support farmers with a cost-effective, efficient, and eco-friendly solution."
+  },
+  "values": {
+    "heading": "Our Values",
+    "p1": "At the heart of Mahabal Agro Industry lie innovation, sustainability, and accountability. We believe in engineering nature-positive solutions through responsible organic waste management and ensuring consistent compost quality by following scientific parameters like particle size, oxygen flow, temperature, and moisture levels.",
+    "p2": "We are dedicated to empowering farmers with awareness and access to superior alternatives to raw cow dung and synthetic fertilizers. Our work is grounded in the belief that agricultural success should support both productivity and environmental well-being."
+  },
+  "history": {
+    "heading": "Our History",
+    "p1": "Mahabal Agro Industry was established with the vision to tackle the growing problem of unmanaged organic waste in agro-industrial sectors. What started as a localized effort to improve soil fertility has grown into a scalable composting system, serving rural and urban farming communities.",
+    "p2": "Through continuous innovation, real-world trials, and collaboration with farmers, we’ve refined our engineering compost methodology to deliver results that surpass conventional approaches. Our journey is driven by a passion for soil health, sustainable farming, and turning waste into agricultural wealth."
+  }
+}

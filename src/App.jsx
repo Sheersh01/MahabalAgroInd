@@ -30,7 +30,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className="relative font-[gill sans]">
+    <div className="relative font-['gill sans']">
       <Navbar />
       <ScrollToTop/>
       <Routes>

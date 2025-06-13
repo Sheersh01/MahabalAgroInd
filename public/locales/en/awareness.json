@@ -1,0 +1,30 @@
+{
+  "title": "Awareness",
+  "breadcrumb": "/ awareness",
+  "menu": {
+    "about": "About Compost",
+    "benefits": "Benefits",
+    "usage": "Usage Guide",
+    "sustainable": "Sustainable Farming"
+  },
+  "about": {
+    "title": "What is Mahabal Engineering Compost?",
+    "para1": "Mahabal Engineering Compost is a scientifically developed organic compost made from 100% natural agro-waste inputs such as biomass, cow dung, cow urine, and enhanced with beneficial cultures like Trichoderma, Bio-NPK, and decomposition microbes. Our compost goes through a carefully controlled process to ensure complete decomposition, high nutrient content, and biological activity.",
+    "para2": "Unlike raw organic inputs or traditional vermicompost, our engineering compost is optimized with a balanced carbon-to-nitrogen ratio and fortified with micronutrients and antifungals. This results in a well-structured, mature compost that works both as a natural fertilizer and a soil conditioner—improving root development, soil aeration, and overall plant health."
+  },
+  "benefits": {
+    "title": "Why Prefer This Over Raw Cow Dung or Chemicals?",
+    "para1": "Raw cow dung, when used directly, can emit harmful gases like methane, introduce pathogens or weed seeds, and lead to inconsistent results. On the other hand, chemical fertilizers may provide short-term yield but damage soil health, disturb microbial ecosystems, and lead to long-term degradation.",
+    "para2": "Mahabal Engineering Compost offers a safe and sustainable solution. It enhances soil structure, restores microbial balance, retains moisture, and improves nutrient uptake. This leads to better crop yields, greater disease resistance, and long-lasting soil fertility—supporting healthy farming without harming nature."
+  },
+  "usage": {
+    "title": "How to Use Mahabal Engineering Compost",
+    "para1": "Apply compost during soil preparation by mixing it into the top 6–8 inches of soil before sowing. Use 1–2 kg per square meter based on the crop and soil type. For existing plants, apply compost around the base to provide slow-release nutrients during growth.",
+    "para2": "Frequent use improves organic matter, supports beneficial microbes, and reduces irrigation needs. Combine it with good farming practices like crop rotation for optimal results. Avoid using raw cow dung directly, as it may harm crops due to toxicity or contamination."
+  },
+  "sustainable": {
+    "title": "Encouraging Sustainable Farming and Soil Revival",
+    "para1": "Mahabal Engineering Compost promotes long-term soil regeneration, reduces the need for harmful inputs, and contributes to biodiversity. Healthier soils mean stronger crops, improved carbon absorption, and natural resistance to pests and disease.",
+    "para2": "Our compost aligns with eco-conscious agriculture, helping farmers transition to methods that conserve resources and nurture the land. Be part of the shift toward green farming by enriching your soil with our advanced organic compost solution."
+  }
+}
