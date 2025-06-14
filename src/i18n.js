@@ -12,7 +12,7 @@ i18n
         lng: "en", // always start with English
     fallbackLng: "en", // use en if detected language is not available
     debug: false,
-    ns: ["home", "about"], // list all namespaces (page files)
+    ns: ["home", "about","product","awareness","contact","footer","navbar"], // list all namespaces (page files)
     defaultNS: "home", // default namespace
     interpolation: {
       escapeValue: false,

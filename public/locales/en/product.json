@@ -1,0 +1,28 @@
+{
+  "product": {
+    "pageTitle": "Products",
+    "breadcrumb": "/ product",
+    "organic": {
+      "name": "Organic Compost",
+      "description": "Produced by engineering compost system method, enriched with micronutrients and antifungal agents for superior results.",
+      "benefits": [
+        "Rich in micronutrients",
+        "Contains antifungal properties",
+        "Boosts soil health sustainably",
+        "Better results than vermicompost"
+      ],
+      "cost": "From ₹120.00"
+    },
+    "vermi": {
+      "name": "Vermicompost",
+      "description": "Produced by worms (vermi-composting), naturally breaking down organic waste into nutrient-rich fertilizer.",
+      "benefits": [
+        "Improves soil structure",
+        "Contains beneficial microbes",
+        "Eco-friendly and natural process",
+        "Widely used for organic farming"
+      ],
+      "cost": "From ₹120.00"
+    }
+  }
+}
