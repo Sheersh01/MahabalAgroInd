@@ -37,7 +37,7 @@ const Farmers = () => {
 
       <div className="w-full md:px-12 md:mt-20 px-6 mt-10">
         {/* Navigation Buttons */}
-        <div className="border-y border-[#2E1403] md:mb-20 mb-10 flex flex-wrap justify-center gap-4 text-center py-4">
+        <div className="border-y border-[#2E1403] md:mb-20 mb-10 flex flex-wrap justify-center md:gap-12 gap-4  text-center py-4">
           {[
             { label: "menu.about", ref: aboutRef },
             { label: "menu.benefits", ref: benefitsRef },
@@ -62,7 +62,7 @@ const Farmers = () => {
             </div>
           </div>
           <div className="md:w-1/2 w-full flex flex-col justify-center lg:px-8 md:px-4 md:text-left">
-            <h1 className="font-semibold text-[6vw] md:text-[3.2vw] lg:text-[2.8vw] leading-tight text-center">
+            <h1 className="font-semibold text-[6vw] md:text-[3.2vw] lg:text-[2.8vw] leading-tight md:text-start text-center mb-10">
               {t("about.title")}
             </h1>
             {(t("about.points", { returnObjects: true }) || []).map((point, idx) => (
@@ -80,7 +80,7 @@ const Farmers = () => {
             {[1, 2, 3, 4, 5, 6].map((index) => (
               <div
                 key={index}
-                className="group border border-[#2E1403] rounded-2xl p-6 h-[12rem] md:h-[14rem] lg:h-[18rem] justify-start bg-[#F6F0E8] text-[#2E1403] hover:bg-[#2E1403] hover:text-[#F6F0E8] transition-all duration-300"
+                className="group border border-[#2E1403] rounded-2xl p-6 h-[13rem] md:h-[14rem] lg:h-[18rem] justify-start bg-[#F6F0E8] text-[#2E1403] hover:bg-[#2E1403] hover:text-[#F6F0E8] transition-all duration-300"
               >
                 <img
                   className="lg:w-14 md:w-10 w-8 lg:h-14 md:h-10 h-8  lg:mb-4 mb-2  transition duration-300 group-hover:invert"
@@ -104,7 +104,7 @@ const Farmers = () => {
             </div>
           </div>
           <div className="md:w-1/2 w-full flex flex-col justify-center lg:px-8 md:px-4   md:text-left">
-            <h1 className="font-semibold text-[8vw] md:text-[3.2vw] lg:text-[2.8vw] leading-tight text-center mb-6">
+            <h1 className="font-semibold text-[8vw] md:text-[3.2vw] lg:text-[2.8vw] leading-tight text-center mb-6  md:text-start">
               {t("usage.title")}
             </h1>
             {(t("usage.points", { returnObjects: true }) || []).map((point, idx) => (
@@ -121,7 +121,7 @@ const Farmers = () => {
             </div>
           </div>
           <div className="md:w-1/2 w-full flex flex-col justify-center lg:px-8 md:px-4  md:text-left">
-            <h1 className="font-semibold text-[8vw] md:text-[3.2vw] lg:text-[2.8vw] leading-tight text-center mb-4 ">
+            <h1 className="font-semibold text-[8vw] md:text-[3.2vw] lg:text-[2.8vw] leading-tight text-center mb-4  md:text-start">
               {t("sustainable.title")}
             </h1>
             {(t("sustainable.points", { returnObjects: true }) || []).map((point, idx) => (
