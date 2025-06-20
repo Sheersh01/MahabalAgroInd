@@ -6,7 +6,7 @@ import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
 import Product from "./pages/Product.jsx";
-import Awareness from "./pages/Awareness.jsx";
+import Farmers from "./pages/Farmers.jsx";
 import Footer from "./components/Footer.jsx";
 import ScrollToTop from './components/ScrollToTop';
 const App = () => {
@@ -38,7 +38,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/product" element={<Product />} />
-        <Route path="/awareness" element={<Awareness />} />
+        <Route path="/farmers" element={<Farmers />} />
       </Routes>
       <Footer />
     </div>

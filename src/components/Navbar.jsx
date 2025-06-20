@@ -203,7 +203,7 @@ const Navbar = () => {
           className="flex lg:flex-row flex-col lg:py-24 justify-evenly lg:mt-20 md:mt-10 px-4 font-thin"
         >
           <div className="flex flex-col gap-6 md:w-[40%] w-full mb-10">
-            {["home", "about", "contact", "awareness", "product"].map((key) => (
+            {["home", "about", "contact", "farmers", "product"].map((key) => (
               <NavLink
                 key={key}
                 className="w-fit lg:text-4xl md:text-[4.8vw] text-[6vw] hover:text-[#D98324]"

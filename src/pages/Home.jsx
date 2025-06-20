@@ -16,13 +16,13 @@ const Home = () => {
   const contentsData = t("description.contentSections", { returnObjects: true }).map((item, index) => ({
     ...item,
     img: index === 0 ? whatImg : whoImg,
-    link: index === 0 ? "/about" : "/awareness"
+    link: index === 0 ? "/about" : "/farmers"
   }));
 
   const contentsData2 = t("description.contentSections2", { returnObjects: true }).map((item, index) => ({
     ...item,
     img: index === 0 ? whatImg : whoImg,
-    link: index === 0 ? "/about" : "/awareness"
+    link: index === 0 ? "/about" : "/farmers"
   }));
 
   return (
