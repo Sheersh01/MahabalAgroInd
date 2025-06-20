@@ -1,10 +1,10 @@
 import React, { useRef } from "react";
 import { useTranslation } from "react-i18next";
 import PageHeader from "../components/PageHeader";
-import aboutUsImg from "../assets/about2.avif";
-import about2Img from "../assets/about5.avif";
-import about3Img from "../assets/about3.avif";
-import about4Img from "../assets/about4.avif";
+import aboutImg from "../assets/aboutPage/aboutImg.avif";
+import aboutImg2 from "../assets/aboutPage/aboutImg2.avif";
+import aboutImg3 from "../assets/aboutPage/aboutImg3.avif";
+import aboutImg4 from "../assets/aboutPage/aboutImg4.avif";
 
 const About = () => {
   const { t } = useTranslation("about");
@@ -22,7 +22,7 @@ const About = () => {
       <PageHeader
         title={t("title")}
         breadcrumb={t("breadcrumb")}
-        image={aboutUsImg}
+        image={aboutImg}
       />
 
       <div className="w-full md:px-12 md:mt-20 px-6 mt-10">
@@ -55,7 +55,7 @@ const About = () => {
           <div className="md:w-1/2 w-full">
             <div className="w-full bg-pink-100 lg:h-[30vw] md:h-[40vw] h-[60vw] mb-10 flex items-center justify-center">
               <img
-                src={about2Img}
+                src={aboutImg2}
                 alt="About Us Illustration"
                 className="object-cover w-full h-full"
               />
@@ -78,7 +78,7 @@ const About = () => {
           <div className="md:w-1/2 w-full">
             <div className="w-full bg-pink-100 lg:h-[30vw] md:h-[40vw] h-[60vw] mb-10 flex items-center justify-center">
               <img
-                src={about3Img}
+                src={aboutImg3}
                 alt="Our Values Illustration"
                 className="object-cover w-full h-full"
               />
@@ -101,7 +101,7 @@ const About = () => {
           <div className="md:w-1/2 w-full">
             <div className="w-full bg-pink-100 lg:h-[30vw] md:h-[40vw] h-[60vw] mb-10 flex items-center justify-center">
               <img
-                src={about4Img}
+                src={aboutImg4}
                 alt="Our History Illustration"
                 className="object-cover w-full h-full"
               />

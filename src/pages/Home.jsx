@@ -5,8 +5,8 @@ import Statistics from "../components/Statistics";
 import InfoSection from "../components/InfoSection";
 import Motto from "../components/Motto";
 import Testimonials from "../components/Testimonials";
-import whatImg from "../assets/what.avif";
-import whoImg from "../assets/who.avif";
+import whatImg from "../assets/homePage/what.avif";
+import whoImg from "../assets/homePage/who.avif";
 import Facts from "../components/Facts";
 import { useTranslation } from "react-i18next";
 

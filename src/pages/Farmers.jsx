@@ -1,18 +1,18 @@
 import React, { useRef } from "react";
 import { useTranslation } from "react-i18next";
 import PageHeader from "../components/PageHeader";
-import productImg from "../assets/awareness.avif";
-import awareness1Img from "../assets/awareness5.avif";
-import awareness3Img from "../assets/awareness3.avif";
-import awareness4Img from "../assets/awareness4.avif";
+import farmersImg from "../assets/farmersPage/farmersImg.avif";
+import farmersImg1 from "../assets/farmersPage/farmersImg1.avif";
+import farmersImg2 from "../assets/farmersPage/farmersImg2.avif";
+import farmersImg3 from "../assets/farmersPage/farmersImg3.avif";
 
 // Benefit icons
-import icon1 from "../assets/seeding (1).png";
-import icon2 from "../assets/water-drop.png";
-import icon3 from "../assets/crops (1).png";
-import icon4 from "../assets/flasks.png";
-import icon5 from "../assets/yes (1).png";
-import icon6 from "../assets/save-money.png";
+import icon1 from "../assets/icons/icon1.png";
+import icon2 from "../assets/icons/icon2.png";
+import icon3 from "../assets/icons/icon3.png";
+import icon4 from "../assets/icons/icon4.png";
+import icon5 from "../assets/icons/icon5.png";
+import icon6 from "../assets/icons/icon6.png";
 
 const Farmers = () => {
   const { t } = useTranslation("awareness");
@@ -32,7 +32,7 @@ const Farmers = () => {
       <PageHeader
         title={t("title")}
         breadcrumb={t("breadcrumb")}
-        image={productImg}
+        image={farmersImg}
       />
 
       <div className="w-full md:px-12 md:mt-20 px-6 mt-10">
@@ -58,7 +58,7 @@ const Farmers = () => {
         <section ref={aboutRef} className="lg:mb-40 md:mb-20 mb-10 w-full flex md:flex-row flex-col items-center">
           <div className="md:w-1/2 w-full">
             <div className="w-full h-[60vw] md:h-[50vw] lg:h-[30vw] mb-10">
-              <img src={awareness1Img} alt="Mahabal Compost" className="object-cover w-full h-full rounded-xl" />
+              <img src={farmersImg1} alt="Mahabal Compost" className="object-cover w-full h-full rounded-xl" />
             </div>
           </div>
           <div className="md:w-1/2 w-full flex flex-col justify-center lg:px-8 md:px-4 md:text-left">
@@ -100,7 +100,7 @@ const Farmers = () => {
         <section ref={usageRef} className="lg:mb-40 md:mb-20 mb-10 w-full flex md:flex-row flex-col items-center">
           <div className="md:w-1/2 w-full">
             <div className="w-full h-[60vw] md:h-[50vw] lg:h-[30vw] mb-10">
-              <img src={awareness3Img} alt="How to Apply" className="object-cover w-full h-full rounded-xl" />
+              <img src={farmersImg2} alt="How to Apply" className="object-cover w-full h-full rounded-xl" />
             </div>
           </div>
           <div className="md:w-1/2 w-full flex flex-col justify-center lg:px-8 md:px-4   md:text-left">
@@ -117,7 +117,7 @@ const Farmers = () => {
         <section ref={sustainableRef} className="lg:mb-40 md:mb-20 mb-10 w-full flex flex-col md:flex-row-reverse items-center">
           <div className="md:w-1/2 w-full">
             <div className="w-full h-[60vw] md:h-[50vw] lg:h-[30vw] mb-10">
-              <img src={awareness4Img} alt="Sustainable Farming" className="object-cover w-full h-full rounded-xl" />
+              <img src={farmersImg3} alt="Sustainable Farming" className="object-cover w-full h-full rounded-xl" />
             </div>
           </div>
           <div className="md:w-1/2 w-full flex flex-col justify-center lg:px-8 md:px-4  md:text-left">

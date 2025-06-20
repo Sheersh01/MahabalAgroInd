@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
-import heroImg from '../assets/hero2.avif';
+import heroImg from '../assets/homePage/hero.avif';
 import { useTranslation } from 'react-i18next';
 
 const Hero = () => {

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import ReadMoreBtn from "./ReadMoreBtn";
-import fertilizerImg from "../assets/fertilizer_6986765.png";
+import fertilizerImg from "../assets/homePage/fertilizerImg.png";
 import Accordion from "../components/Accordion";
 
 const InfoSection = () => {

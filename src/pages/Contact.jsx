@@ -1,10 +1,10 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import PageHeader from "../components/PageHeader";
-import contactUsImg from "../assets/contactUs6.jpg";
 import { FaLocationDot } from "react-icons/fa6";
 import GoogleMap from "../components/GoogleMap";
 import ContactForm from "../components/ContactForm";
+import contactUsImg from "../assets/contactPage/contact.jpg";
 
 const Contact = () => {
   const { t } = useTranslation("contact");

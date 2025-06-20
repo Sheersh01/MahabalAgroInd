@@ -1,9 +1,9 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import PageHeader from "../components/PageHeader";
-import productImg from "../assets/product2.avif";
-import vermiCompostImg from "../assets/vermicompost.png";
-import organicCompostImg from "../assets/organicCompost.png";
+import productImg from "../assets/productsPage/product.avif";
+import vermiCompostImg from "../assets/productsPage/vermicompost.png";
+import organicCompostImg from "../assets/productsPage/organicCompost.png";
 
 const Product = () => {
   const { t } = useTranslation("product"); // not using namespaces

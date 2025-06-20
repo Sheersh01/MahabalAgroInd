@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
-import GraphemeSplitter from "grapheme-splitter"; // ✅ NEW
-import statsImg from "../assets/stat.avif";
-import barChart from "../assets/bar-chart_7945679.png";
-import analyticsImg from "../assets/analytics_7945651.png";
+import GraphemeSplitter from "grapheme-splitter";  
+import statsCircleImg from "../assets/homePage/statsCircleImg.avif";
+import barChart from "../assets/homePage/barChart.png";
+import analyticsImg from "../assets/homePage/analyticsImg.png";
 
 const Statistics = () => {
   const { t } = useTranslation();
@@ -208,7 +208,7 @@ const Statistics = () => {
             <img
               ref={rotateRef}
               className="h-full w-full object-cover -rotate-10"
-              src={statsImg}
+              src={statsCircleImg}
               alt=""
             />
           </div>

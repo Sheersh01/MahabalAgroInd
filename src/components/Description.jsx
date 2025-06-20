@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import ContentBox from "./ContentBox";
-import des from "../assets/des.avif";
-import des2 from "../assets/des2.avif";
-import des3 from "../assets/des3.avif";
+import description from "../assets/homePage/description.avif";
+import description2 from "../assets/homePage/description2.avif";
+import description3 from "../assets/homePage/description3.avif";
 import { useTranslation } from "react-i18next";
 import GraphemeSplitter from "grapheme-splitter"; // ✅ NEW
 
@@ -139,21 +139,21 @@ const Description = ({ contents }) => {
             className="image-span overflow-hidden lg:w-50 md:w-40 w-16 h-6 translate-y-2 lg:h-16 md:h-10 rounded-full inline-block lg:translate-y-4 md:translate-y-3 opacity-0"
             data-position={span1Position}
           >
-            <img className="w-full h-full object-cover" src={des} alt="" />
+            <img className="w-full h-full object-cover" src={description} alt="" />
           </span>
           {wrapped2.elements}
           <span
             className="image-span overflow-hidden lg:w-50 md:w-40 w-16 h-6 translate-y-2 lg:h-16 md:h-10 rounded-full inline-block lg:translate-y-4 md:translate-y-3 opacity-0"
             data-position={span2Position}
           >
-            <img className="w-full h-full object-cover" src={des2} alt="" />
+            <img className="w-full h-full object-cover" src={description2} alt="" />
           </span>
           {wrapped3.elements}
           <span
             className="image-span overflow-hidden lg:w-50 md:w-40 w-16 h-6 translate-y-2 lg:h-16 md:h-10 rounded-full inline-block lg:translate-y-4 md:translate-y-3 opacity-0"
             data-position={span3Position}
           >
-            <img className="w-full h-full object-cover" src={des3} alt="" />
+            <img className="w-full h-full object-cover" src={description3} alt="" />
           </span>
         </>
       </h1>

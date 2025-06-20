@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import profile from "../assets/profile.png";
+import profile from "../assets/homePage/profile.png";
 
 const Testimonials = () => {
   const { t } = useTranslation();

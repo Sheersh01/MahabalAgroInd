@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import GraphemeSplitter from 'grapheme-splitter'; // ✅ Import Unicode splitter
-import motoImg from '../assets/moto.avif';
+import mottoImg from '../assets/homePage/mottoImg.avif';
 
 const Motto = () => {
   const { t } = useTranslation();
@@ -72,7 +72,7 @@ const Motto = () => {
     <div className="w-full mb-20 h-screen relative text-[#F6F0E8] bg-black">
       <img
         className="w-full h-full object-cover object-top opacity-[85%]"
-        src={motoImg}
+        src={mottoImg}
         alt="Motto Background"
       />
       <div className="absolute top-10 left-0 lg:px-12 px-6 lg:py-10 py-6">

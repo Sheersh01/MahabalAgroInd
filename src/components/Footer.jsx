@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaWhatsapp } from "react-icons/fa";
-import Logo from "../assets/logo2.png";
+import Logo from "../assets/logo.png";
 import { useTranslation } from "react-i18next";
 
 const Footer = () => {

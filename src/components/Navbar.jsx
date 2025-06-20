@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { gsap } from "gsap";
 import { FaEarthAsia, FaWhatsapp, FaArrowRightLong } from "react-icons/fa6";
-import Logo from "../assets/logo2.png";
+import Logo from "../assets/logo.png";
 import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
