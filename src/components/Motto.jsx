@@ -103,7 +103,7 @@ const Motto = () => {
         </h1>
         <h1
           ref={mottoRef}
-          className="lg:text-[3vw] md:text-[4vw] text-[5.5vw] py-8 leading-tight"
+          className="lg:text-[2.8vw] md:text-[4vw] text-[5.5vw] py-8 leading-tight"
         >
           {wrapTextByWords(t('motto.statement'))}
         </h1>
