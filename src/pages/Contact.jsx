@@ -23,7 +23,7 @@ const Contact = () => {
 
       <div className="w-full pb-10 md:py-10 px-4 flex md:flex-row flex-col">
         {/* Left Contact Info */}
-        <div className="lg:w-[40%] md:w-1/2 w-full md:p-8 py-8 flex flex-col items-center justify-center">
+        <div className="xl:w-[40%] md:w-1/2 w-full md:p-8 py-8 flex flex-col items-center justify-center">
           <div className="bg-[#2E1403] text-[#F6F0E8] py-4 px-8 rounded-2xl">
             <h1 className="lg:text-[1.2vw] md:text-[1.8vw] text-[4vw]">
               {t("headOffice")}
@@ -44,7 +44,7 @@ const Contact = () => {
         </div>
 
         {/* Right Contact Form */}
-        <div className="lg:w-[60%] md:w-1/2 w-full lg:px-12 lg:py-8 md:px-8 md:py-4">
+        <div className="xl:w-[60%] md:w-1/2 w-full lg:px-12 lg:py-8 md:px-8 md:py-4">
           <h1 className="lg:text-[2vw] md:text-[4vw] text-[10vw] text-center pb-10 font-semibold text-[#2E1403]">
             {t("getInTouch")}
           </h1>

@@ -41,7 +41,7 @@ const ContactForm = ({send}) => {
 
       <div className="w-full flex flex-wrap gap-y-4 mb-4">
         <input
-          className={`${inputStyles} lg:mr-6 mr-3 h-12 w-[48%]`}
+          className={`${inputStyles} xl:mr-6 mr-3 h-12 w-[48%]`}
           type="text"
           name="firstName"
           placeholder="First Name"
@@ -65,7 +65,7 @@ const ContactForm = ({send}) => {
 
       <div className="w-full flex flex-wrap gap-y-4 mb-4">
         <input
-          className={`${inputStyles} lg:mr-6 mr-3 h-12 w-[48%]`}
+          className={`${inputStyles} xl:mr-6 mr-3 h-12 w-[48%]`}
           type="tel"
           name="phone"
           placeholder="Phone Number"
