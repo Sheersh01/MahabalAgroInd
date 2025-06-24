@@ -9,6 +9,7 @@ import Product from "./pages/Product.jsx";
 import Farmers from "./pages/Farmers.jsx";
 import Footer from "./components/Footer.jsx";
 import ScrollToTop from './components/ScrollToTop';
+
 const App = () => {
   useEffect(() => {
     const lenis = new Lenis({
@@ -16,6 +17,9 @@ const App = () => {
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       smooth: true,
     });
+
+    // Make Lenis instance accessible globally
+    window.lenis = lenis;
 
     const raf = (time) => {
       lenis.raf(time);
@@ -26,6 +30,8 @@ const App = () => {
 
     return () => {
       lenis.destroy();
+      // Clean up global reference
+      delete window.lenis;
     };
   }, []);
 

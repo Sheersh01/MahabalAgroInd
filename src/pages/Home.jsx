@@ -7,6 +7,8 @@ import Motto from "../components/Motto";
 import Testimonials from "../components/Testimonials";
 import whatImg from "../assets/homePage/what.avif";
 import whoImg from "../assets/homePage/who.avif";
+import IndustryWeServe from "../assets/homePage/IndustryWeServe.avif";
+import compostSystem from "../assets/homePage/compostSystem.avif";
 import Facts from "../components/Facts";
 import { useTranslation } from "react-i18next";
 
@@ -21,7 +23,7 @@ const Home = () => {
 
   const contentsData2 = t("description.contentSections2", { returnObjects: true }).map((item, index) => ({
     ...item,
-    img: index === 0 ? whatImg : whoImg,
+    img: index === 0 ? IndustryWeServe :  compostSystem,
     link: index === 0 ? "/about" : "/farmers"
   }));
 

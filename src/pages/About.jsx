@@ -7,6 +7,7 @@ import aboutImg3 from "../assets/aboutPage/aboutImg3.avif";
 import aboutImg4 from "../assets/aboutPage/aboutImg4.avif";
 
 const About = () => {
+  
   const { t } = useTranslation("about");
 
   const aboutUsRef = useRef(null);

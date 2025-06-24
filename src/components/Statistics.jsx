@@ -203,7 +203,7 @@ const Statistics = () => {
             </div>
           </div>
         </div>
-        <div className="lg:w-[40%] md:w-1/2 w-full mb-10 relative flex justify-center items-center">
+        <div className=" lg:w-[40%] md:w-1/2 w-full mb-10 relative flex justify-center items-center">
           <div className="lg:h-96 lg:w-96 md:w-72 md:h-72 h-60 w-60 rounded-full overflow-hidden">
             <img
               ref={rotateRef}
@@ -213,12 +213,12 @@ const Statistics = () => {
             />
           </div>
           <img
-            className="lg:w-24 md:w-16 w-14 absolute bottom-0 lg:left-20 md:left-10 left-12"
+            className="lg:w-24 md:w-16 w-14 absolute bottom-0 xl:left-30 lg:left-20 md:left-10 left-12"
             src={barChart}
             alt=""
           />
           <img
-            className="lg:w-24 md:w-16 w-14 absolute top-0 xl:left-96 lg:left-72 md:left-60 left-56"
+            className="lg:w-24 md:w-16 w-14 absolute top-0 xl:left-100 lg:left-72 md:left-60 left-60"
             src={analyticsImg}
             alt=""
           />

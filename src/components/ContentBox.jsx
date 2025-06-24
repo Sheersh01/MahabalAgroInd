@@ -23,7 +23,7 @@ const ContentBox = ({ heading, description, buttonTitle = "Read More", img ,link
         <p className="lg:text-[1.8vw] md:text-[2vw] text-[4vw] leading-none">
           {description}
         </p>
-       <Link to={link}> <ReadMoreBtn  title={buttonTitle} /></Link>
+       <Link to={link} > <ReadMoreBtn   title={buttonTitle} /></Link>
       </div>
     </div>
   );

@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
   const linesRef = useRef([]);
+  const imgRef = useRef(null);
   const { t } = useTranslation('home');
 
   useEffect(() => {
@@ -19,16 +20,40 @@ const Hero = () => {
         stagger: 0.3,
       }
     );
+
+    // Parallax scroll effect with throttling
+    let ticking = false;
+    const handleScroll = () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          const scrolled = window.pageYOffset;
+          if (imgRef.current) {
+            const parallaxSpeed = 0.15;
+            // Move image up when scrolling down (negative value)
+            imgRef.current.style.transform = `translateY(${-scrolled * parallaxSpeed}px)`;
+          }
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   return (
     <div className="relative h-screen text-[#F6F0E8] w-full bg-black overflow-hidden">
       <img
-        className="w-full h-full object-cover object-top opacity-[60%] bg-black"
+        ref={imgRef}
+        className="absolute top-0 left-0 w-full h-[120%] object-cover object-top opacity-[60%] bg-black will-change-transform"
         src={heroImg}
         alt="Hero Background"
       />
-      <div className="absolute top-1/2 -translate-y-1/2 lg:px-20 md:px-4 w-full md:space-y-2 space-y-12">
+      <div className="absolute top-1/2 -translate-y-1/2 lg:px-20 md:px-4 w-full md:space-y-2 space-y-12 z-10">
         {t('hero.title', { returnObjects: true }).map((word, index) => (
           <h1
             key={index}

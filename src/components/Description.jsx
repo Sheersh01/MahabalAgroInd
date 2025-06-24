@@ -131,7 +131,7 @@ const Description = ({ contents }) => {
     <div className="min-h-screen w-full lg:px-12 md:px-8 px-4 lg:py-20 md:py-10 py-10">
       <h1
         ref={textRef}
-        className="lg:mb-20 md:mb-12 mb-10 lg:text-[3vw] md:text-[4vw] text-[5.5vw] text-center"
+        className="lg:mb-20 md:mb-12 mb-10 lg:text-[3vw] md:text-[3.8vw] text-[5.5vw] text-center"
       >
         <>
           {wrapped1.elements}

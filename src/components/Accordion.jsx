@@ -15,7 +15,7 @@ const AccordionItem = ({ question, answer }) => {
 
   return (
     <div
-      className={`border mb-2 border-gray-300 md:p-8 px-4 py-2 rounded-md transition-colors duration-300 ${
+      className={`border mb-2 border-[#2E1403] md:p-8 px-4 py-2 rounded-md transition-colors duration-300 ${
         isOpen ? "bg-[#2E1403] text-[#F6F0E8]" : "bg-[#F6F0E8] text-[#2E1403]"
       }`}
     >

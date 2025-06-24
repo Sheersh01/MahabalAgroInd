@@ -24,6 +24,9 @@ const Footer = () => {
             </Link>
             <Link to="/contact">
               <h1 className="py-1 hover:text-[#D98324] transition-all">{t("contact")}</h1>
+            </Link>   
+            <Link to="/farmers">
+              <h1 className="py-1 hover:text-[#D98324] transition-all">{t("farmer")}</h1>
             </Link>
           </div>
           <div className="lg:text-[1.2vw] md:text-[2vw] text-[4.5vw] w-[60%]">

@@ -6,6 +6,7 @@ import mottoImg from '../assets/homePage/mottoImg.avif';
 const Motto = () => {
   const { t } = useTranslation();
   const mottoRef = useRef(null);
+  const imgRef = useRef(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -46,9 +47,29 @@ const Motto = () => {
     `;
     document.head.appendChild(style);
 
+    // Parallax scroll effect with throttling
+    let ticking = false;
+    const handleScroll = () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          const scrolled = window.pageYOffset;
+          if (imgRef.current) {
+            const parallaxSpeed = 0.2;
+            // Move image up when scrolling down (negative value)
+            imgRef.current.style.transform = `translateY(${300 -scrolled * parallaxSpeed}px)`;
+          }
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
     return () => {
       if (mottoRef.current) observer.unobserve(mottoRef.current);
       document.head.removeChild(style);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -69,19 +90,20 @@ const Motto = () => {
   };
 
   return (
-    <div className="w-full mb-20 h-screen relative text-[#F6F0E8] bg-black">
+    <div className="w-full mb-20 h-screen relative text-[#F6F0E8] bg-black overflow-hidden">
       <img
-        className="w-full h-full object-cover object-top opacity-[85%]"
+        ref={imgRef}
+        className="absolute top-0 left-0 w-full h-[150%] object-cover object-center opacity-[85%] will-change-transform "
         src={mottoImg}
         alt="Motto Background"
       />
-      <div className="absolute top-10 left-0 lg:px-12 px-6 lg:py-10 py-6">
+      <div className="absolute top-10 left-0 lg:px-12 px-6 lg:py-10 py-6 z-10">
         <h1 className="uppercase lg:text-[2vw] md:text-[3vw] text-[4.5vw]">
           {t('motto.heading')}
         </h1>
         <h1
           ref={mottoRef}
-          className="lg:text-[3vw] md:text-[4.8vw] text-[6vw] py-8 leading-tight"
+          className="lg:text-[3vw] md:text-[4vw] text-[5.5vw] py-8 leading-tight"
         >
           {wrapTextByWords(t('motto.statement'))}
         </h1>
