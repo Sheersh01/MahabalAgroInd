@@ -94,15 +94,18 @@
     "items": [
       {
         "name": "Gorakshan Anusandhan Kendra",
-        "quote": "This product has transformed the way our team works. Highly recommend to anyone looking for quality and reliability."
+        "quote": "This product has transformed the way our team works. Highly recommend to anyone looking for quality and reliability.",
+         "image": "profile3"
       },
       {
         "name": "Aditya Srivastava",
-        "quote": "Exceptional service and support. The team went above and beyond to meet our needs."
+        "quote": "Exceptional service and support. The team went above and beyond to meet our needs.",
+         "image": "profile1"
       },
       {
         "name": "Aashish Sinha",
-        "quote": "This product has transformed the way our team works. Highly recommend to anyone looking for quality and reliability."
+        "quote": "This product has transformed the way our team works. Highly recommend to anyone looking for quality and reliability.",
+         "image": "profile2"
       }
     ]
   }
