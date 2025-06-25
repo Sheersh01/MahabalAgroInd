@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
-import GraphemeSplitter from 'grapheme-splitter'; // ✅ Import Unicode splitter
+import GraphemeSplitter from 'grapheme-splitter';
 import mottoImg from '../assets/homePage/mottoImg.avif';
 
 const Motto = () => {
@@ -9,6 +9,7 @@ const Motto = () => {
   const imgRef = useRef(null);
 
   useEffect(() => {
+    // Animate text by fading in letters
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -29,17 +30,12 @@ const Motto = () => {
 
     if (mottoRef.current) observer.observe(mottoRef.current);
 
+    // Add animation style
     const style = document.createElement('style');
     style.textContent = `
       @keyframes letterFadeIn {
-        from {
-          opacity: 0;
-          transform: translateY(8px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
+        from { opacity: 0; transform: translateY(8px); }
+        to { opacity: 1; transform: translateY(0); }
       }
       .animate-letter {
         animation: letterFadeIn 0.5s ease-out forwards;
@@ -47,7 +43,7 @@ const Motto = () => {
     `;
     document.head.appendChild(style);
 
-    // Parallax scroll effect with throttling
+    // Parallax scroll
     let ticking = false;
     const handleScroll = () => {
       if (!ticking) {
@@ -55,8 +51,7 @@ const Motto = () => {
           const scrolled = window.pageYOffset;
           if (imgRef.current) {
             const parallaxSpeed = 0.2;
-            // Move image up when scrolling down (negative value)
-            imgRef.current.style.transform = `translateY(${300 -scrolled * parallaxSpeed}px)`;
+            imgRef.current.style.transform = `translateY(${300 - scrolled * parallaxSpeed}px)`;
           }
           ticking = false;
         });
@@ -93,7 +88,7 @@ const Motto = () => {
     <div className="w-full mb-20 h-screen relative text-[#F6F0E8] bg-black overflow-hidden">
       <img
         ref={imgRef}
-        className="absolute top-0 left-0 w-full h-[150%] object-cover object-center opacity-[85%] will-change-transform "
+        className="absolute top-0 left-0 w-full h-[150%] object-cover object-center opacity-[85%] will-change-transform"
         src={mottoImg}
         alt="Motto Background"
       />

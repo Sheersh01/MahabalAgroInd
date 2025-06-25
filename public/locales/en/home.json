@@ -39,7 +39,7 @@
       "employee":"employee",
     "warehouses":"warehouses",
     "products":"products",
-    "experience":"experience",
+    "experience":"years experience",
     "data": {
       "employees": 20,
       "warehouses": 5,

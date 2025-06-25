@@ -1,31 +1,44 @@
 import React, { useState } from "react";
 
-const ContactForm = ({send}) => {
+const ContactForm = ({ send }) => {
+  // Form status states
   const [result, setResult] = useState("");
   const [submitting, setSubmitting] = useState(false);
 
+  // Input field shared styles
   const inputStyles =
     "border border-[#2E1403] focus:outline-none focus:ring-2 focus:ring-[#2E1403] px-4 py-2 rounded-xl placeholder:text-gray-500";
 
+  // Submit handler
   const onSubmit = async (event) => {
-    event.preventDefault();
+    event.preventDefault(); // Prevent default page reload
     setSubmitting(true);
     setResult("Sending...");
 
     const formData = new FormData(event.target);
-    formData.append("access_key", "8ef5797b-2001-4846-a5e2-63c4e8591455"); // 🔑 Replace with your real access key
 
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData,
-    });
+    // Append Web3Forms access key
+    formData.append("access_key", "8ef5797b-2001-4846-a5e2-63c4e8591455"); // 🔐 Replace this with your secure access key
 
-    const data = await response.json();
-    if (data.success) {
-      setResult("Thanks for contacting us! We'll get back to you shortly.");
-      event.target.reset();
-    } else {
-      setResult(data.message || "Something went wrong. Please try again.");
+    try {
+      // Submit form data to Web3Forms
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        // Show success message and reset form
+        setResult("Thanks for contacting us! We'll get back to you shortly.");
+        event.target.reset();
+      } else {
+        // Show error message
+        setResult(data.message || "Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      setResult("Network error. Please try again.");
     }
 
     setSubmitting(false);
@@ -33,12 +46,19 @@ const ContactForm = ({send}) => {
 
   return (
     <form onSubmit={onSubmit} className="w-full relative">
-      {/* 👀 Honeypot field (spam trap) */}
-      <input type="text" name="website" className="hidden" tabIndex="-1" autoComplete="off" />
+      {/* 🛡 Honeypot field - hidden input to prevent bots */}
+      <input
+        type="text"
+        name="website"
+        className="hidden"
+        tabIndex="-1"
+        autoComplete="off"
+      />
 
-      {/* ✅ CAPTCHA (Web3Forms built-in) */}
+      {/* 🔐 CAPTCHA (handled by Web3Forms) */}
       <input type="hidden" name="captcha" value="true" />
 
+      {/* 👤 Name Fields */}
       <div className="w-full flex flex-wrap gap-y-4 mb-4">
         <input
           className={`${inputStyles} xl:mr-6 mr-3 h-12 w-[48%]`}
@@ -56,6 +76,7 @@ const ContactForm = ({send}) => {
         />
       </div>
 
+      {/* 🏢 Optional Company Name */}
       <input
         className={`${inputStyles} mb-4 h-12 w-full`}
         type="text"
@@ -63,6 +84,7 @@ const ContactForm = ({send}) => {
         placeholder="Company Name (Optional)"
       />
 
+      {/* ☎ Contact Info */}
       <div className="w-full flex flex-wrap gap-y-4 mb-4">
         <input
           className={`${inputStyles} xl:mr-6 mr-3 h-12 w-[48%]`}
@@ -80,6 +102,7 @@ const ContactForm = ({send}) => {
         />
       </div>
 
+      {/* 📝 Message Box */}
       <textarea
         placeholder="Message"
         name="message"
@@ -87,6 +110,7 @@ const ContactForm = ({send}) => {
         required
       ></textarea>
 
+      {/* 🚀 Submit Button */}
       <button
         type="submit"
         disabled={submitting}
@@ -95,6 +119,7 @@ const ContactForm = ({send}) => {
         {submitting ? "Sending..." : `${send}`}
       </button>
 
+      {/* ✅ Result Feedback */}
       {result && (
         <div className="text-[#D98324] font-semibold text-lg text-center py-6">
           {result}

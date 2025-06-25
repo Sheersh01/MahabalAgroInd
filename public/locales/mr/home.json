@@ -39,7 +39,7 @@
     "employee": "कर्मचारी",
     "warehouses": "गोदामे",
     "products": "उत्पादने",
-    "experience": "अनुभव",
+  "experience": "वर्षांचा अनुभव",
     "data": {
       "employees": 20,
       "warehouses": 5,
