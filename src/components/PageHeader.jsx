@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
  * - breadcrumb: JSX/string (breadcrumbs after "Home >")
  * - image: image source (right side image)
  */
-const PageHeader = ({ title, breadcrumb, image }) => {
+const PageHeader = ({ home,title, breadcrumb, image }) => {
   return (
     <div>
       {/* Thin top bar for design accent */}
@@ -24,7 +24,7 @@ const PageHeader = ({ title, breadcrumb, image }) => {
         <div className="w-1/2 border-t-2 border-r-2 border-[#D9C19E]/50 md:px-8 px-2 md:py-4 py-2 relative">
           {/* Breadcrumbs */}
           <p className="text-[3vw] md:text-[2vw] lg:text-[1vw]">
-            <Link to="/" className="hover:underline">Home</Link> {breadcrumb}
+            <Link to="/" className="hover:underline"> {home} </Link> {breadcrumb}
           </p>
 
           {/* Centered Page Title */}

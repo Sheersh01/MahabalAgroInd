@@ -43,6 +43,7 @@ const Farmers = () => {
     <div className="min-h-screen w-full bg-[#F6F0E8] text-[#2E1403]">
       {/* Header with title & breadcrumb */}
       <PageHeader
+            home={t("homeLink")}
         title={t("title")}
         breadcrumb={t("breadcrumb")}
         image={farmersImg}

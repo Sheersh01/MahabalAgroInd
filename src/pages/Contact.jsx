@@ -23,6 +23,7 @@ const Contact = () => {
     <div className="min-h-screen w-full">
       {/* Page Header with image and breadcrumb */}
       <PageHeader
+      home={t("homeLink")}
         title={t("pageTitle")}
         breadcrumb={t("breadcrumb")}
         image={contactUsImg}

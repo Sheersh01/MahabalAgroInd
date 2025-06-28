@@ -1,5 +1,6 @@
 {
   "product": {
+    "homeLink":"Home",
     "pageTitle": "Products",
     "breadcrumb": "/ product",
     "organic": {

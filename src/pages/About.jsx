@@ -31,6 +31,7 @@ const About = () => {
     <div className="min-h-screen w-full bg-[#F6F0E8] text-[#2E1403]">
       {/* Page Header */}
       <PageHeader
+      home={t("homeLink")}
         title={t("title")}
         breadcrumb={t("breadcrumb")}
         image={aboutImg}

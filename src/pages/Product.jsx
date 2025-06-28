@@ -74,6 +74,7 @@ const Product = () => {
     <div className="min-h-screen w-full bg-[#F6F0E8] text-[#2E1403]">
       {/* Page Header Section */}
       <PageHeader
+            home={t("product.homeLink")}
         title={t("product.pageTitle")}
         breadcrumb={t("product.breadcrumb")}
         image={productImg}
