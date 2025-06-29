@@ -37,14 +37,14 @@
     "title": "Mahabal in Numbers",
     "subtitle": "Our continuously rising success each year is making us one of Nagpur's top organic fertilizer producers.",
       "employee":"employee",
-    "warehouses":"warehouses",
+    "Customer":"Customer served",
     "products":"products",
     "experience":"years experience",
     "data": {
-      "employees": 20,
-      "warehouses": 5,
+      "employees": 8,
+      "Customer": 100,
       "products": 2,
-      "experience": 2
+      "experience": 5
     }
   },
   "motto": {

@@ -35,7 +35,7 @@ const Statistics = () => {
   // State for animated number values
   const [animatedNumbers, setAnimatedNumbers] = useState({
     employees: 0,
-    warehouses: 0,
+    Customer: 0,
     products: 0,
     experience: 0,
   });
@@ -156,7 +156,7 @@ const Statistics = () => {
             // Trigger animated numbers
             setTimeout(() => animateNumber("employees", targetNumbers.employees), 100);
             setTimeout(() => animateNumber("products", targetNumbers.products), 0);
-            setTimeout(() => animateNumber("warehouses", targetNumbers.warehouses), 200);
+            setTimeout(() => animateNumber("Customer", targetNumbers.Customer), 200);
             setTimeout(() => animateNumber("experience", targetNumbers.experience), 300);
             
             // Mark as animated and disconnect observer
@@ -227,10 +227,10 @@ const Statistics = () => {
               <h1 className="md:text-[6vw] text-[10vw]">{animatedNumbers.employees}+</h1>
               <h1 className="uppercase md:text-[1.5vw] text-[3vw]">{t("statistics.employee")}</h1>
             </div>
-            {/* Warehouses */}
+            {/* Customer */}
             <div className="leading-none tracking-tight mb-10">
-              <h1 className="md:text-[6vw] text-[10vw]">{animatedNumbers.warehouses}</h1>
-              <h1 className="uppercase md:text-[1.5vw] text-[3vw]">{t("statistics.warehouses")}</h1>
+              <h1 className="md:text-[6vw] text-[10vw]">{animatedNumbers.Customer}+</h1>
+              <h1 className="uppercase md:text-[1.5vw] text-[3vw]">{t("statistics.Customer")}</h1>
             </div>
           </div>
           <div>

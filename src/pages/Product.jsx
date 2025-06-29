@@ -62,11 +62,6 @@ const Product = () => {
         {Array.isArray(product.benefits) &&
           product.benefits.map((benefit, i) => <li key={i}>{benefit}</li>)}
       </ul>
-
-      {/* Product Cost */}
-      <p className="mb-4 text-xl font-semibold text-[#D98324]">
-        {product.cost}
-      </p>
     </div>
   );
 

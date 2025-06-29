@@ -37,14 +37,14 @@
     "title": "संख्याओं में महाबल",
     "subtitle": "हर साल हमारी निरंतर बढ़ती सफलता ने हमें नागपुर के शीर्ष जैविक उर्वरक उत्पादकों में से एक बना दिया है।",
     "employee": "कर्मचारी",
-    "warehouses": "गोदाम",
-    "products": "उत्पाद",
+  "Customer": "सेवा किए गए ग्राहक",
+  "products": "उत्पाद",
   "experience": "वर्षों का अनुभव",
     "data": {
-      "employees": 20,
-      "warehouses": 5,
+      "employees": 8,
+      "Customer": 100,
       "products": 2,
-      "experience": 2
+      "experience": 5
     }
   },
   "motto": {

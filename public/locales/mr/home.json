@@ -37,14 +37,14 @@
     "title": "संख्यांमधील महाबळ",
     "subtitle": "दरवर्षी आमच्या यशात होणारी वाढ आम्हाला नागपूरमधील आघाडीच्या सेंद्रिय खत उत्पादकांमध्ये स्थान देत आहे.",
     "employee": "कर्मचारी",
-    "warehouses": "गोदामे",
+    "Customer": "ग्राहक सेवा दिली",
     "products": "उत्पादने",
   "experience": "वर्षांचा अनुभव",
     "data": {
-      "employees": 20,
-      "warehouses": 5,
+      "employees": 8,
+      "Customer": 100,
       "products": 2,
-      "experience": 2
+      "experience": 5
     }
   },
   "motto": {
